@@ -20,11 +20,11 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - name: Create version & changelog
-        run: npx changeset version
+        run: npx @changesets/cli version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to npm
-        run: npx changeset publish
+        run: npx @changesets/cli publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
