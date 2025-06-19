@@ -1,5 +1,5 @@
 {
-  "name": "@reacture/iso-locale",
+  "name": "@reacture-io/iso-locale",
   "version": "0.0.2",
   "description": "Provide ISO standards for handling countries & languages. Fully written in typescript.",
   "exports": {
