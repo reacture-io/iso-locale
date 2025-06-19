@@ -1,0 +1,44 @@
+{
+  "name": "iso-locale",
+  "version": "0.0.1",
+  "description": "Provide ISO standards for handling countries & languages. Fully written in typescript.",
+  "exports": {
+    "./countries": {
+      "types": "./dist/countries/index.d.ts",
+      "import": "./dist/countries/index.mjs",
+      "require": "./dist/countries/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "format": "biome format . --write",
+    "lint": "biome lint .",
+    "test": "vitest"
+  },
+  "keywords": [
+    "iso",
+    "languages",
+    "countries"
+  ],
+  "author": "Indy Van Canegem",
+  "license": "MIT",
+  "engines": {
+    "pnpm": ">=8.0.0",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
+  },
+  "devDependencies": {
+    "biome": "^0.3.3",
+    "tsup": "^8.5.0",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "zod": "^3.25.67"
+  }
+}
