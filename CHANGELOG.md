@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.0.5
+
+### Patch Changes
+
+- 017580f: better package support
+
 ## 0.0.4
 
 ### Patch Changes
