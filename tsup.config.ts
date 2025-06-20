@@ -10,4 +10,9 @@ export default defineConfig({
   dts: true,
   clean: true,
   treeshake: true,
+  outExtension({ format }) {
+    return {
+      js: format === "cjs" ? ".cjs" : ".mjs",
+    };
+  },
 });
