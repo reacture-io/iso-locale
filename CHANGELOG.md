@@ -1,5 +1,12 @@
 # @reacture/iso-locale
 
+## 0.1.2
+
+### Patch Changes
+
+- eb23715: export regions
+- ce2cf3e: export from data file
+
 ## 0.1.1
 
 ### Patch Changes
