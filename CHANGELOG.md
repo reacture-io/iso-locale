@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.1.3
+
+### Patch Changes
+
+- e03a518: adapt readme
+
 ## 0.1.2
 
 ### Patch Changes
