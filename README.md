@@ -13,7 +13,7 @@ A TypeScript library providing ISO standards for handling countries and language
 ## Installation
 
 ```bash
-pnpm add @reacture/iso-locale
+pnpm add @reacture-io/iso-locale
 ```
 
 **Note**: This package requires pnpm as the package manager. Please use pnpm instead of npm or yarn.
