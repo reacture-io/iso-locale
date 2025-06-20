@@ -19,6 +19,15 @@ jobs:
           always-auth: true
       - run: pnpm install --frozen-lockfile
 
+      - name: Lint
+        run: pnpm lint
+
+      - name: Format check
+        run: pnpm format
+
+      - name: Build
+        run: pnpm build
+
       - name: Create version & changelog
         run: npx @changesets/cli version
         env:
