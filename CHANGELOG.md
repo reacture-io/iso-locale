@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.0.6
+
+### Patch Changes
+
+- 7d4276e: support .cjs
+
 ## 0.0.5
 
 ### Patch Changes
