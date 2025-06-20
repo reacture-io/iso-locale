@@ -4,3 +4,5 @@ export * from "./country";
 export * from "./iso-3166";
 export * from "./numeric";
 export * from "./utils";
+export * from "./region";
+export * from "./continent";
