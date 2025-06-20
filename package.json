@@ -38,6 +38,7 @@
     "access": "public"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.4",
     "biome": "^0.3.3",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3",
