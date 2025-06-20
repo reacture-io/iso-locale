@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.1.1
+
+### Patch Changes
+
+- 47d79b5: export region and continent
+
 ## 0.1.0
 
 ### Minor Changes
