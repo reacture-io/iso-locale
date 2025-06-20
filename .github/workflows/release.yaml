@@ -28,12 +28,15 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Create version & changelog
-        run: npx @changesets/cli version
+
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish to npm
+      - name: Publish
+        if: steps.changesets.outputs.hasChangesets == 'false'
         run: npx @changesets/cli publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
