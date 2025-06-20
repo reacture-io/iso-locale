@@ -11,6 +11,7 @@ A TypeScript library providing ISO standards for handling countries and language
 - ✅ **Fully Tested**: Comprehensive test coverage
 
 ## Installation
+(https://www.npmjs.com/package/@reacture-io/iso-locale)
 
 ```bash
 pnpm add @reacture-io/iso-locale
