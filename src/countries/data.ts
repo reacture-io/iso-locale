@@ -1,5 +1,7 @@
+import type { Continent } from "./continent";
 import type { ISO3166 } from "./iso-3166";
 import { z } from "zod";
+import type { Region } from "./region";
 
 export const countries: Array<ISO3166> = [
   {
@@ -1994,4 +1996,24 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
   },
+];
+
+export const continents: Array<Continent> = [
+  "Africa",
+  "Antarctica",
+  "Asia",
+  "Europe",
+  "North America",
+  "Oceania",
+  "South America",
+];
+
+export const regions: Array<Region> = [
+  "EMEA",
+  "APAC",
+  "AMER",
+  "LATAM",
+  "NA",
+  "SA",
+  "MEA",
 ];
