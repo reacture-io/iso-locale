@@ -1,4 +1,4 @@
-# iso-locale
+# @reacture-io/iso-locale
 
 A TypeScript library providing ISO standards for handling countries and languages. This package offers comprehensive ISO 3166 country code support with full type safety using Zod validation.
 
