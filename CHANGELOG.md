@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.1.0
+
+### Minor Changes
+
+- 63e1a4a: add support for regions and continents
+
 ## 0.0.6
 
 ### Patch Changes
