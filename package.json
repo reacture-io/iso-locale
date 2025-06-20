@@ -19,7 +19,8 @@
     "dev": "tsup --watch",
     "format": "biome format . --write",
     "lint": "biome lint .",
-    "test": "vitest"
+    "test": "vitest",
+    "release": "@changesets/cli publish"
   },
   "keywords": [
     "iso",
