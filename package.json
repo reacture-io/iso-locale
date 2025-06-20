@@ -20,7 +20,7 @@
     "format": "biome format . --write",
     "lint": "biome lint .",
     "test": "vitest",
-    "release": "@changesets/cli publish"
+    "release": "npx @changesets/cli publish"
   },
   "keywords": [
     "iso",
