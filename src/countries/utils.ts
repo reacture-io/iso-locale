@@ -1,7 +1,7 @@
 import type { Alpha2 } from "./alpha2";
 import type { Alpha3 } from "./alpha3";
 import type { Continent } from "./continent";
-import { countries } from "./countries";
+import { countries } from "./data";
 import type { Country } from "./country";
 import type { ISO3166 } from "./iso-3166";
 import type { Numeric } from "./numeric";
