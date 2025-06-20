@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.0.4
+
+### Patch Changes
+
+- bcd07ec: test CI/CD
+
 ## 0.0.3
 
 ### Patch Changes
