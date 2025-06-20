@@ -2,7 +2,15 @@
   "name": "@reacture-io/iso-locale",
   "version": "0.0.4",
   "description": "Provide ISO standards for handling countries & languages. Fully written in typescript.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
     "./countries": {
       "types": "./dist/countries/index.d.ts",
       "import": "./dist/countries/index.mjs",
