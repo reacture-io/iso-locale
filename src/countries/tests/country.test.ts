@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { countries } from "../countries";
 import { country, isValidCountry } from "../country";
 
 describe("country", () => {
@@ -39,6 +40,14 @@ describe("country", () => {
   });
 
   it("should not allow boolean", () => {
+    const dialects = countries.reduce((dialects, country) => {
+      for (const dialect of country.dialects) {
+        if (!dialects.find((d) => d === dialect.dialect)) {
+          dialects.push(dialect.dialect);
+        }
+      }
+      return dialects;
+    }, [] as Array<string>);
     expect(isValidCountry(true)).toBe(false);
   });
 });

@@ -1,29 +1,27 @@
 import { z } from "zod";
-import { Alpha2, alpha2 } from "./alpha2";
-import { alpha3, type Alpha3 } from "./alpha3";
-import { numeric, type Numeric } from "./numeric";
-import { country, type Country } from "./country";
-import { region, type Region } from "./region";
-import { continent, type Continent } from "./continent";
+import { isValidDialect, type Dialect } from "../languages/dialect";
+import { Alpha2, isValidAlpha2 } from "./alpha2";
+import { isValidAlpha3, type Alpha3 } from "./alpha3";
+import { isValidContinent, type Continent } from "./continent";
+import { isValidCountry, type Country } from "./country";
+import { isValidNumeric, type Numeric } from "./numeric";
+import { isValidRegion, type Region } from "./region";
 
-const schema = z.object({
-  name: z.custom<Country>((value) => country.safeParse(value).success),
-  alpha2: z.custom<Alpha2>((value) => alpha2.safeParse(value).success),
-  alpha3: z.custom<Alpha3>((value) => alpha3.safeParse(value).success),
-  numeric: z.custom<Numeric>((value) => numeric.safeParse(value).success),
-  regions: z.array(
-    z.custom<Region>((value) => region.safeParse(value).success)
-  ),
-  continents: z.array(
-    z.custom<Continent>((value) => continent.safeParse(value).success)
-  ),
+export const iso3166 = z.object({
+  name: z.custom<Country>((value) => isValidCountry(value)),
+  alpha2: z.custom<Alpha2>((value) => isValidAlpha2(value)),
+  alpha3: z.custom<Alpha3>((value) => isValidAlpha3(value)),
+  numeric: z.custom<Numeric>((value) => isValidNumeric(value)),
+  regions: z.array(z.custom<Region>((value) => isValidRegion(value))),
+  continents: z.array(z.custom<Continent>((value) => isValidContinent(value))),
+  dialects: z.array(z.custom<Dialect>((value) => isValidDialect(value))),
 });
 
 /**
  * ISO 3166
  * https://www.iso.org/iso-3166-country-codes.html
  */
-export type ISO3166 = z.infer<typeof schema>;
+export type ISO3166 = z.infer<typeof iso3166>;
 
 export const isValidISO3166 = (object: unknown) =>
-  schema.safeParse(object).success;
+  iso3166.safeParse(object).success;

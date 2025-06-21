@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { continents, countries, regions } from "../data";
+import { continents, countries, regions } from "../countries";
 
 describe("countries", () => {
   it("should be defined", () => {

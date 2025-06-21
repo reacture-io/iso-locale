@@ -6,4 +6,4 @@ export * from "./numeric";
 export * from "./utils";
 export * from "./region";
 export * from "./continent";
-export * from "./data";
+export * from "./countries";
