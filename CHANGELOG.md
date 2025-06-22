@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.2.2
+
+### Patch Changes
+
+- b88f3c4: isValidBCP47
+
 ## 0.2.1
 
 ### Patch Changes
