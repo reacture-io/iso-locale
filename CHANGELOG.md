@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.2.1
+
+### Patch Changes
+
+- bd9154a: add currencies export
+
 ## 0.2.0
 
 ### Minor Changes
