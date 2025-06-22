@@ -1,6 +1,6 @@
-import type { Continent, ISO3166, Region } from "./types";
+import type { Continent, Country, Region } from "./types";
 
-export const countries: Array<ISO3166> = [
+export const countries: Array<Country> = [
   {
     name: "Afghanistan",
     alpha2: "AF",
@@ -9,6 +9,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC", "MEA"],
     dialects: ["fa-AF", "ps-AF"],
+    currency: "AFN",
   },
   {
     name: "Albania",
@@ -18,6 +19,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["sq-AL"],
+    currency: "ALL",
   },
   {
     name: "Algeria",
@@ -26,12 +28,8 @@ export const countries: Array<ISO3166> = [
     numeric: "012",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      "ar-DZ",
-      // While Berber is widely spoken, "Berber" is a language family.
-      // For more specific dialect, a different ISO code might be needed or a broader BCP47 tag.
-      // Leaving it out for now to adhere strictly to singular languages with iso639_1 codes.
-    ],
+    dialects: ["ar-DZ"],
+    currency: "DZD",
   },
   {
     name: "American Samoa",
@@ -41,6 +39,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["en-AS", "sm-AS"],
+    currency: "USD",
   },
   {
     name: "Andorra",
@@ -50,6 +49,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["ca-AD"],
+    currency: "EUR",
   },
   {
     name: "Angola",
@@ -59,6 +59,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["pt-AO"],
+    currency: "AOA",
   },
   {
     name: "Anguilla",
@@ -68,6 +69,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-AI"],
+    currency: "XCD",
   },
   {
     name: "Antarctica",
@@ -77,6 +79,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Antarctica"],
     regions: [],
     dialects: ["en-AQ", "es-AQ", "fr-AQ", "ru-AQ"],
+    currency: "USD",
   },
   {
     name: "Antigua and Barbuda",
@@ -86,6 +89,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-AG"],
+    currency: "XCD",
   },
   {
     name: "Argentina",
@@ -95,6 +99,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["es-AR"],
+    currency: "ARS",
   },
   {
     name: "Armenia",
@@ -104,6 +109,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia", "Europe"],
     regions: ["EMEA", "APAC"],
     dialects: ["hy-AM"],
+    currency: "AMD",
   },
   {
     name: "Aruba",
@@ -113,6 +119,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America", "Europe"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["nl-AW", "pap-AW"],
+    currency: "AWG",
   },
   {
     name: "Australia",
@@ -122,6 +129,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["en-AU"],
+    currency: "AUD",
   },
   {
     name: "Austria",
@@ -131,6 +139,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["de-AT"],
+    currency: "EUR",
   },
   {
     name: "Azerbaijan",
@@ -140,6 +149,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia", "Europe"],
     regions: ["EMEA", "APAC"],
     dialects: ["az-AZ"],
+    currency: "AZN",
   },
   {
     name: "Bahamas",
@@ -149,6 +159,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-BS"],
+    currency: "BSD",
   },
   {
     name: "Bahrain",
@@ -158,6 +169,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-BH"],
+    currency: "BHD",
   },
   {
     name: "Bangladesh",
@@ -167,6 +179,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["bn-BD"],
+    currency: "BDT",
   },
   {
     name: "Barbados",
@@ -176,6 +189,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-BB"],
+    currency: "BBD",
   },
   {
     name: "Belarus",
@@ -185,6 +199,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["be-BY", "ru-BY"],
+    currency: "BYN",
   },
   {
     name: "Belgium",
@@ -194,6 +209,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["nl-BE", "fr-BE", "de-BE"],
+    currency: "EUR",
   },
   {
     name: "Belize",
@@ -203,6 +219,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-BZ"],
+    currency: "BZD",
   },
   {
     name: "Benin",
@@ -212,6 +229,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-BJ"],
+    currency: "XOF",
   },
   {
     name: "Bermuda",
@@ -221,6 +239,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "NA"],
     dialects: ["en-BM"],
+    currency: "BMD",
   },
   {
     name: "Bhutan",
@@ -230,6 +249,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["dz-BT"],
+    currency: "BTN",
   },
   {
     name: "Plurinational State of Bolivia",
@@ -244,6 +264,7 @@ export const countries: Array<ISO3166> = [
       "gn-BO",
       // Bolivia has 37 official languages, adding major ones.
     ],
+    currency: "BOB",
   },
   {
     name: "Bonaire, Sint Eustatius and Saba",
@@ -253,6 +274,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America", "Europe"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["nl-BQ", "en-BQ"],
+    currency: "USD",
   },
   {
     name: "Bosnia and Herzegovina",
@@ -262,6 +284,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["bs-BA", "hr-BA", "sr-BA"],
+    currency: "BAM",
   },
   {
     name: "Botswana",
@@ -271,6 +294,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["en-BW", "tn-BW"],
+    currency: "BWP",
   },
   {
     name: "Bouvet Island",
@@ -280,6 +304,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Antarctica"],
     regions: [],
     dialects: ["en-BV"],
+    currency: "USD",
   },
   {
     name: "Brazil",
@@ -289,6 +314,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["pt-BR"],
+    currency: "BRL",
   },
   {
     name: "British Indian Ocean Territory",
@@ -298,6 +324,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["en-IO"],
+    currency: "USD",
   },
   {
     name: "Brunei Darussalam",
@@ -307,6 +334,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["ms-BN"],
+    currency: "BND",
   },
   {
     name: "Bulgaria",
@@ -316,6 +344,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["bg-BG"],
+    currency: "BGN",
   },
   {
     name: "Burkina Faso",
@@ -325,6 +354,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-BF"],
+    currency: "XOF",
   },
   {
     name: "Burundi",
@@ -334,6 +364,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["rn-BI", "fr-BI", "en-BI"],
+    currency: "BIF",
   },
   {
     name: "Cape Verde",
@@ -343,6 +374,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["pt-CV"],
+    currency: "CVE",
   },
   {
     name: "Cambodia",
@@ -352,6 +384,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["km-KH"],
+    currency: "KHR",
   },
   {
     name: "Cameroon",
@@ -361,6 +394,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["en-CM", "fr-CM"],
+    currency: "XAF",
   },
   {
     name: "Canada",
@@ -370,6 +404,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "NA"],
     dialects: ["en-CA", "fr-CA"],
+    currency: "CAD",
   },
   {
     name: "Cayman Islands",
@@ -379,6 +414,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-KY"],
+    currency: "KYD",
   },
   {
     name: "Central African Republic",
@@ -388,6 +424,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-CF", "sg-CF"],
+    currency: "XAF",
   },
   {
     name: "Chad",
@@ -397,6 +434,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-TD", "fr-TD"],
+    currency: "XAF",
   },
   {
     name: "Chile",
@@ -406,6 +444,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["es-CL"],
+    currency: "CLP",
   },
   {
     name: "China",
@@ -415,6 +454,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["zh-Hans-CN"],
+    currency: "CNY",
   },
   {
     name: "Christmas Island",
@@ -424,6 +464,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["en-CX"],
+    currency: "AUD",
   },
   {
     name: "Cocos (Keeling) Islands",
@@ -433,6 +474,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["en-CC"],
+    currency: "AUD",
   },
   {
     name: "Colombia",
@@ -442,6 +484,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["es-CO"],
+    currency: "COP",
   },
   {
     name: "Comoros",
@@ -451,6 +494,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-KM", "fr-KM"],
+    currency: "KMF",
   },
   {
     name: "Congo", // Republic of the Congo
@@ -460,6 +504,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-CG", "ln-CG", "kg-CG"],
+    currency: "XAF",
   },
   {
     name: "Democratic Republic of Congo",
@@ -469,6 +514,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-CD", "ln-CD", "kg-CD", "sw-CD", "lu-CD"],
+    currency: "CDF",
   },
   {
     name: "Cook Islands",
@@ -478,6 +524,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["en-CK"],
+    currency: "NZD",
   },
   {
     name: "Costa Rica",
@@ -487,6 +534,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["es-CR"],
+    currency: "CRC",
   },
   {
     name: "Côte d'Ivoire",
@@ -496,6 +544,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-CI"],
+    currency: "XOF",
   },
   {
     name: "Croatia",
@@ -505,6 +554,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["hr-HR"],
+    currency: "EUR",
   },
   {
     name: "Cuba",
@@ -514,6 +564,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["es-CU"],
+    currency: "CUP",
   },
   {
     name: "Curaçao",
@@ -523,6 +574,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America", "Europe"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["nl-CW", "en-CW"],
+    currency: "USD",
   },
   {
     name: "Cyprus",
@@ -532,6 +584,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe", "Asia"],
     regions: ["EMEA"],
     dialects: ["el-CY", "tr-CY"],
+    currency: "EUR",
   },
   {
     name: "Czechia",
@@ -541,6 +594,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["cs-CZ"],
+    currency: "CZK",
   },
   {
     name: "Denmark",
@@ -550,6 +604,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["da-DK"],
+    currency: "DKK",
   },
   {
     name: "Djibouti",
@@ -559,6 +614,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-DJ", "fr-DJ", "so-DJ", "aa-DJ"],
+    currency: "DJF",
   },
   {
     name: "Dominica",
@@ -568,6 +624,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-DM"],
+    currency: "XCD",
   },
   {
     name: "Dominican Republic",
@@ -577,6 +634,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["es-DO"],
+    currency: "DOP",
   },
   {
     name: "Ecuador",
@@ -586,6 +644,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["es-EC", "qu-EC"],
+    currency: "USD",
   },
   {
     name: "Egypt",
@@ -595,6 +654,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa", "Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-EG"],
+    currency: "EGP",
   },
   {
     name: "El Salvador",
@@ -604,6 +664,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["es-SV"],
+    currency: "USD",
   },
   {
     name: "Equatorial Guinea",
@@ -613,6 +674,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["es-GQ", "fr-GQ", "pt-GQ"],
+    currency: "XAF",
   },
   {
     name: "Eritrea",
@@ -622,6 +684,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["ti-ER", "ar-ER", "en-ER"],
+    currency: "ERN",
   },
   {
     name: "Estonia",
@@ -631,6 +694,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["et-EE"],
+    currency: "EUR",
   },
   {
     name: "Eswatini",
@@ -640,6 +704,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["en-SZ", "ss-SZ"],
+    currency: "SZL",
   },
   {
     name: "Ethiopia",
@@ -649,6 +714,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["am-ET", "om-ET", "ti-ET"],
+    currency: "ETB",
   },
   {
     name: "Falkland Islands",
@@ -658,6 +724,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "SA"],
     dialects: ["en-FK"],
+    currency: "FKP",
   },
   {
     name: "Faroe Islands",
@@ -667,6 +734,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["fo-FO", "da-FO"],
+    currency: "DKK",
   },
   {
     name: "Fiji",
@@ -676,6 +744,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["en-FJ", "fj-FJ"],
+    currency: "FJD",
   },
   {
     name: "Finland",
@@ -685,6 +754,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["fi-FI", "sv-FI"],
+    currency: "EUR",
   },
   {
     name: "France",
@@ -694,6 +764,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["fr-FR"],
+    currency: "EUR",
   },
   {
     name: "French Guiana",
@@ -703,6 +774,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["fr-GF"],
+    currency: "EUR",
   },
   {
     name: "French Polynesia",
@@ -712,6 +784,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["fr-PF", "ty-PF"],
+    currency: "XPF",
   },
   {
     name: "French Southern Territories",
@@ -721,6 +794,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Antarctica"],
     regions: [],
     dialects: ["fr-TF"],
+    currency: "EUR",
   },
   {
     name: "Gabon",
@@ -730,6 +804,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-GA"],
+    currency: "XAF",
   },
   {
     name: "Gambia",
@@ -739,6 +814,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["en-GM"],
+    currency: "GMD",
   },
   {
     name: "Georgia",
@@ -748,6 +824,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia", "Europe"],
     regions: ["EMEA"],
     dialects: ["ka-GE"],
+    currency: "GEL",
   },
   {
     name: "Germany",
@@ -757,6 +834,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["de-DE"],
+    currency: "EUR",
   },
   {
     name: "Ghana",
@@ -766,6 +844,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["en-GH"],
+    currency: "GHS",
   },
   {
     name: "Gibraltar",
@@ -775,6 +854,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["en-GI"],
+    currency: "GIP",
   },
   {
     name: "Greece",
@@ -784,6 +864,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["el-GR"],
+    currency: "EUR",
   },
   {
     name: "Greenland",
@@ -793,6 +874,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "NA"],
     dialects: ["kl-GL", "da-GL"],
+    currency: "DKK",
   },
   {
     name: "Grenada",
@@ -802,6 +884,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-GD"],
+    currency: "XCD",
   },
   {
     name: "Guadeloupe",
@@ -811,6 +894,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["fr-GP"],
+    currency: "EUR",
   },
   {
     name: "Guam",
@@ -820,6 +904,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["en-GU", "ch-GU"],
+    currency: "USD",
   },
   {
     name: "Guatemala",
@@ -829,6 +914,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["es-GT"],
+    currency: "GTQ",
   },
   {
     name: "Guernsey",
@@ -838,6 +924,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["en-GG", "fr-GG"],
+    currency: "GBP",
   },
   {
     name: "Guinea",
@@ -847,6 +934,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-GN"],
+    currency: "GNF",
   },
   {
     name: "Guinea-Bissau",
@@ -856,6 +944,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["pt-GW"],
+    currency: "XOF",
   },
   {
     name: "Guyana",
@@ -865,6 +954,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["en-GY"],
+    currency: "GYD",
   },
   {
     name: "Haiti",
@@ -874,6 +964,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["ht-HT", "fr-HT"],
+    currency: "HTG",
   },
   {
     name: "Heard Island and McDonald Islands",
@@ -883,6 +974,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Antarctica"],
     regions: [],
     dialects: ["en-HM"],
+    currency: "AUD",
   },
   {
     name: "Holy See",
@@ -892,6 +984,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["la-VA", "it-VA"],
+    currency: "EUR",
   },
   {
     name: "Honduras",
@@ -901,6 +994,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["es-HN"],
+    currency: "HNL",
   },
   {
     name: "Hong Kong",
@@ -910,6 +1004,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["zh-Hant-HK", "en-HK"],
+    currency: "HKD",
   },
   {
     name: "Hungary",
@@ -919,6 +1014,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["hu-HU"],
+    currency: "HUF",
   },
   {
     name: "Iceland",
@@ -928,6 +1024,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["is-IS"],
+    currency: "ISK",
   },
   {
     name: "India",
@@ -942,6 +1039,7 @@ export const countries: Array<ISO3166> = [
       // India has many official languages, including Bengali, Marathi, Telugu, Tamil, Gujarati, etc.
       // For brevity, only the two federal official languages are included.
     ],
+    currency: "INR",
   },
   {
     name: "Indonesia",
@@ -951,6 +1049,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["id-ID"],
+    currency: "IDR",
   },
   {
     name: "Iran (Islamic Republic of)",
@@ -960,6 +1059,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["fa-IR"],
+    currency: "IRR",
   },
   {
     name: "Iraq",
@@ -969,6 +1069,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-IQ", "ku-IQ"],
+    currency: "IQD",
   },
   {
     name: "Ireland",
@@ -978,6 +1079,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["ga-IE", "en-IE"],
+    currency: "EUR",
   },
   {
     name: "Isle of Man",
@@ -987,6 +1089,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["en-IM", "gv-IM"],
+    currency: "GBP",
   },
   {
     name: "Israel",
@@ -996,6 +1099,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["he-IL", "ar-IL"],
+    currency: "ILS",
   },
   {
     name: "Italy",
@@ -1005,6 +1109,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["it-IT"],
+    currency: "EUR",
   },
   {
     name: "Jamaica",
@@ -1014,6 +1119,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-JM"],
+    currency: "JMD",
   },
   {
     name: "Japan",
@@ -1023,6 +1129,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["ja-JP"],
+    currency: "JPY",
   },
   {
     name: "Jersey",
@@ -1032,6 +1139,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["en-JE", "fr-JE"],
+    currency: "GBP",
   },
   {
     name: "Jordan",
@@ -1041,6 +1149,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-JO"],
+    currency: "JOD",
   },
   {
     name: "Kazakhstan",
@@ -1050,6 +1159,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia", "Europe"],
     regions: ["EMEA", "APAC"],
     dialects: ["kk-KZ", "ru-KZ"],
+    currency: "KZT",
   },
   {
     name: "Kenya",
@@ -1059,6 +1169,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["sw-KE", "en-KE"],
+    currency: "KES",
   },
   {
     name: "Kiribati",
@@ -1071,6 +1182,7 @@ export const countries: Array<ISO3166> = [
       "en-KI",
       "gil-KI", // ISO 639-3, no 639-1
     ],
+    currency: "AUD",
   },
   {
     name: "Democratic People's Republic of Korea",
@@ -1080,6 +1192,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["ko-KP"],
+    currency: "KPW",
   },
   {
     name: "Republic of Korea",
@@ -1089,6 +1202,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["ko-KR"],
+    currency: "KRW",
   },
   {
     name: "Kuwait",
@@ -1098,6 +1212,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-KW"],
+    currency: "KWD",
   },
   {
     name: "Kyrgyzstan",
@@ -1107,6 +1222,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["ky-KG", "ru-KG"],
+    currency: "KGS",
   },
   {
     name: "Lao People's Democratic Republic",
@@ -1116,6 +1232,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["lo-LA"],
+    currency: "LAK",
   },
   {
     name: "Latvia",
@@ -1125,6 +1242,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["lv-LV"],
+    currency: "EUR",
   },
   {
     name: "Lebanon",
@@ -1134,6 +1252,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-LB", "fr-LB"],
+    currency: "LBP",
   },
   {
     name: "Lesotho",
@@ -1143,6 +1262,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["st-LS", "en-LS"],
+    currency: "LSL",
   },
   {
     name: "Liberia",
@@ -1152,6 +1272,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["en-LR"],
+    currency: "LRD",
   },
   {
     name: "Libya",
@@ -1161,6 +1282,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-LY"],
+    currency: "LYD",
   },
   {
     name: "Liechtenstein",
@@ -1170,6 +1292,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["de-LI"],
+    currency: "CHF",
   },
   {
     name: "Lithuania",
@@ -1179,6 +1302,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["lt-LT"],
+    currency: "EUR",
   },
   {
     name: "Luxembourg",
@@ -1188,6 +1312,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["lb-LU", "fr-LU", "de-LU"],
+    currency: "EUR",
   },
   {
     name: "Macao",
@@ -1197,6 +1322,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["zh-Hant-MO", "pt-MO"],
+    currency: "MOP",
   },
   {
     name: "Madagascar",
@@ -1206,6 +1332,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["mg-MG", "fr-MG"],
+    currency: "MGA",
   },
   {
     name: "Malawi",
@@ -1215,6 +1342,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["en-MW", "ny-MW"],
+    currency: "MWK",
   },
   {
     name: "Malaysia",
@@ -1224,6 +1352,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["ms-MY", "en-MY", "zh-Hans-MY", "ta-MY"],
+    currency: "MYR",
   },
   {
     name: "Maldives",
@@ -1233,6 +1362,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["dv-MV"],
+    currency: "MVR",
   },
   {
     name: "Mali",
@@ -1242,6 +1372,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-ML"],
+    currency: "XOF",
   },
   {
     name: "Malta",
@@ -1251,6 +1382,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["mt-MT", "en-MT"],
+    currency: "EUR",
   },
   {
     name: "Marshall Islands",
@@ -1260,6 +1392,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["mh-MH", "en-MH"],
+    currency: "USD",
   },
   {
     name: "Martinique",
@@ -1269,6 +1402,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["fr-MQ"],
+    currency: "EUR",
   },
   {
     name: "Mauritania",
@@ -1278,6 +1412,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-MR"],
+    currency: "MRU",
   },
   {
     name: "Mauritius",
@@ -1291,6 +1426,7 @@ export const countries: Array<ISO3166> = [
       "fr-MU",
       // Mauritian Creole (mfe) - no 639-1
     ],
+    currency: "MUR",
   },
   {
     name: "Mayotte",
@@ -1300,6 +1436,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-YT"],
+    currency: "EUR",
   },
   {
     name: "Mexico",
@@ -1309,6 +1446,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["es-MX"],
+    currency: "MXN",
   },
   {
     name: "Micronesia (Federated States of)",
@@ -1318,6 +1456,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["en-FM"],
+    currency: "USD",
   },
   {
     name: "Republic of Moldova",
@@ -1327,6 +1466,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["ro-MD", "ru-MD"],
+    currency: "MDL",
   },
   {
     name: "Monaco",
@@ -1336,6 +1476,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["fr-MC"],
+    currency: "EUR",
   },
   {
     name: "Mongolia",
@@ -1345,6 +1486,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["mn-MN"],
+    currency: "MNT",
   },
   {
     name: "Montenegro",
@@ -1354,6 +1496,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["sr-ME"],
+    currency: "EUR",
   },
   {
     name: "Montserrat",
@@ -1363,6 +1506,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-MS"],
+    currency: "XCD",
   },
   {
     name: "Morocco",
@@ -1372,6 +1516,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-MA", "ber-MA"],
+    currency: "MAD",
   },
   {
     name: "Mozambique",
@@ -1381,6 +1526,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["pt-MZ"],
+    currency: "MZN",
   },
   {
     name: "Myanmar",
@@ -1390,6 +1536,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["my-MM"],
+    currency: "MMK",
   },
   {
     name: "Namibia",
@@ -1399,6 +1546,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["en-NA"],
+    currency: "NAD",
   },
   {
     name: "Nauru",
@@ -1408,6 +1556,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["na-NR", "en-NR"],
+    currency: "AUD",
   },
   {
     name: "Nepal",
@@ -1417,6 +1566,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["ne-NP"],
+    currency: "NPR",
   },
   {
     name: "Netherlands",
@@ -1426,6 +1576,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["nl-NL"],
+    currency: "EUR",
   },
   {
     name: "New Caledonia",
@@ -1435,6 +1586,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["fr-NC"],
+    currency: "XPF",
   },
   {
     name: "New Zealand",
@@ -1444,6 +1596,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["en-NZ", "mi-NZ", "nzs-NZ"],
+    currency: "NZD",
   },
   {
     name: "Nicaragua",
@@ -1453,6 +1606,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["es-NI"],
+    currency: "NIO",
   },
   {
     name: "Niger",
@@ -1462,6 +1616,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-NE"],
+    currency: "XOF",
   },
   {
     name: "Nigeria",
@@ -1474,6 +1629,7 @@ export const countries: Array<ISO3166> = [
       "en-NG",
       // Major regional languages like Hausa, Yoruba, Igbo also spoken.
     ],
+    currency: "NGN",
   },
   {
     name: "Niue",
@@ -1483,6 +1639,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["niu-NU", "en-NU"],
+    currency: "NZD",
   },
   {
     name: "Norfolk Island",
@@ -1495,6 +1652,7 @@ export const countries: Array<ISO3166> = [
       "en-NF",
       // Norfuk (nfk) - no 639-1
     ],
+    currency: "AUD",
   },
   {
     name: "Republic of North Macedonia",
@@ -1504,6 +1662,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["mk-MK"],
+    currency: "MKD",
   },
   {
     name: "Northern Mariana Islands",
@@ -1513,6 +1672,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["en-MP", "ch-MP"],
+    currency: "USD",
   },
   {
     name: "Norway",
@@ -1526,6 +1686,7 @@ export const countries: Array<ISO3166> = [
       "nn-NO",
       // Sami languages also recognized.
     ],
+    currency: "NOK",
   },
   {
     name: "Oman",
@@ -1535,6 +1696,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-OM"],
+    currency: "OMR",
   },
   {
     name: "Pakistan",
@@ -1544,6 +1706,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["ur-PK", "en-PK"],
+    currency: "PKR",
   },
   {
     name: "Palau",
@@ -1553,6 +1716,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["pau-PW", "en-PW"],
+    currency: "USD",
   },
   {
     name: "Palestine, State of",
@@ -1562,6 +1726,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-PS"],
+    currency: "ILS",
   },
   {
     name: "Panama",
@@ -1571,6 +1736,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["es-PA"],
+    currency: "USD",
   },
   {
     name: "Papua New Guinea",
@@ -1585,6 +1751,7 @@ export const countries: Array<ISO3166> = [
       "en-PG",
       // Over 800 indigenous languages
     ],
+    currency: "USD",
   },
   {
     name: "Paraguay",
@@ -1594,6 +1761,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["es-PY", "gn-PY"],
+    currency: "PYG",
   },
   {
     name: "Peru",
@@ -1603,6 +1771,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["es-PE", "qu-PE"],
+    currency: "PEN",
   },
   {
     name: "Philippines",
@@ -1612,6 +1781,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["fil-PH", "en-PH"],
+    currency: "PHP",
   },
   {
     name: "Pitcairn",
@@ -1624,6 +1794,7 @@ export const countries: Array<ISO3166> = [
       "en-PN",
       // Pitkern (pih) - no 639-1
     ],
+    currency: "NZD",
   },
   {
     name: "Poland",
@@ -1633,6 +1804,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["pl-PL"],
+    currency: "PLN",
   },
   {
     name: "Portugal",
@@ -1642,6 +1814,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["pt-PT"],
+    currency: "EUR",
   },
   {
     name: "Puerto Rico",
@@ -1651,6 +1824,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["es-PR", "en-PR"],
+    currency: "USD",
   },
   {
     name: "Qatar",
@@ -1660,6 +1834,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-QA"],
+    currency: "QAR",
   },
   {
     name: "Réunion",
@@ -1669,6 +1844,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-RE"],
+    currency: "EUR",
   },
   {
     name: "Romania",
@@ -1678,6 +1854,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["ro-RO"],
+    currency: "RON",
   },
   {
     name: "Russian Federation",
@@ -1687,6 +1864,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe", "Asia"],
     regions: ["EMEA", "APAC"],
     dialects: ["ru-RU"],
+    currency: "RUB",
   },
   {
     name: "Rwanda",
@@ -1696,6 +1874,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["rw-RW", "en-RW"],
+    currency: "RWF",
   },
   {
     name: "Saint Barthélemy",
@@ -1705,6 +1884,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["fr-BL"],
+    currency: "EUR",
   },
   {
     name: "Saint Helena, Ascension and Tristan da Cunha",
@@ -1714,6 +1894,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["en-SH"],
+    currency: "SHP",
   },
   {
     name: "Saint Kitts and Nevis",
@@ -1723,6 +1904,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-KN"],
+    currency: "XCD",
   },
   {
     name: "Saint Lucia",
@@ -1732,6 +1914,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-LC"],
+    currency: "XCD",
   },
   {
     name: "Saint Martin (French part)",
@@ -1741,6 +1924,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["fr-MF"],
+    currency: "EUR",
   },
   {
     name: "Saint Pierre and Miquelon",
@@ -1750,6 +1934,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "NA"],
     dialects: ["fr-PM"],
+    currency: "EUR",
   },
   {
     name: "Saint Vincent and the Grenadines",
@@ -1759,6 +1944,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-VC"],
+    currency: "XCD",
   },
   {
     name: "Samoa",
@@ -1768,6 +1954,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["sm-WS", "en-WS"],
+    currency: "WST",
   },
   {
     name: "San Marino",
@@ -1777,6 +1964,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["it-SM"],
+    currency: "EUR",
   },
   {
     name: "Sao Tome and Principe",
@@ -1786,6 +1974,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["pt-ST"],
+    currency: "STN",
   },
   {
     name: "Saudi Arabia",
@@ -1795,6 +1984,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-SA"],
+    currency: "SAR",
   },
   {
     name: "Senegal",
@@ -1804,6 +1994,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-SN"],
+    currency: "XOF",
   },
   {
     name: "Serbia",
@@ -1813,6 +2004,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["sr-RS"],
+    currency: "RSD",
   },
   {
     name: "Seychelles",
@@ -1822,6 +2014,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["crs-SC", "en-SC", "fr-SC"],
+    currency: "SCR",
   },
   {
     name: "Sierra Leone",
@@ -1834,6 +2027,7 @@ export const countries: Array<ISO3166> = [
       "en-SL",
       // Krio (kri) - no 639-1
     ],
+    currency: "SLE",
   },
   {
     name: "Singapore",
@@ -1843,6 +2037,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["en-SG", "ms-SG", "zh-Hans-SG", "ta-SG"],
+    currency: "SGD",
   },
   {
     name: "Sint Maarten (Dutch part)",
@@ -1852,6 +2047,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["nl-SX", "en-SX"],
+    currency: "EUR",
   },
   {
     name: "Slovakia",
@@ -1861,6 +2057,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["sk-SK"],
+    currency: "EUR",
   },
   {
     name: "Slovenia",
@@ -1870,6 +2067,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["sl-SI"],
+    currency: "EUR",
   },
   {
     name: "Solomon Islands",
@@ -1882,6 +2080,7 @@ export const countries: Array<ISO3166> = [
       "en-SB",
       // Pijin (pis) - no 639-1
     ],
+    currency: "SBD",
   },
   {
     name: "Somalia",
@@ -1891,6 +2090,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["so-SO", "ar-SO"],
+    currency: "SOS",
   },
   {
     name: "South Africa",
@@ -1912,6 +2112,7 @@ export const countries: Array<ISO3166> = [
       "nso-ZA",
       "nr-ZA",
     ],
+    currency: "ZAR",
   },
   {
     name: "South Georgia and the South Sandwich Islands",
@@ -1921,6 +2122,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Antarctica"],
     regions: [],
     dialects: ["en-GS"],
+    currency: "GBP",
   },
   {
     name: "South Sudan",
@@ -1930,6 +2132,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["en-SS"],
+    currency: "SSP",
   },
   {
     name: "Spain",
@@ -1945,6 +2148,7 @@ export const countries: Array<ISO3166> = [
       "eu-ES",
       // Aranese, Valencian, etc. are also recognized in specific regions
     ],
+    currency: "EUR",
   },
   {
     name: "Sri Lanka",
@@ -1954,6 +2158,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["si-LK", "ta-LK"],
+    currency: "LKR",
   },
   {
     name: "Sudan",
@@ -1963,6 +2168,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-SD", "en-SD"],
+    currency: "SDG",
   },
   {
     name: "Suriname",
@@ -1972,6 +2178,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["nl-SR"],
+    currency: "SRD",
   },
   {
     name: "Svalbard and Jan Mayen",
@@ -1981,6 +2188,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["no-SJ"],
+    currency: "NOK",
   },
   {
     name: "Sweden",
@@ -1990,6 +2198,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["sv-SE"],
+    currency: "SEK",
   },
   {
     name: "Switzerland",
@@ -1999,6 +2208,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["de-CH", "fr-CH", "it-CH", "rm-CH"],
+    currency: "CHF",
   },
   {
     name: "Syrian Arab Republic",
@@ -2008,6 +2218,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-SY"],
+    currency: "SYP",
   },
   {
     name: "Taiwan (Province of China)",
@@ -2017,6 +2228,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["zh-Hant-TW"],
+    currency: "TWD",
   },
   {
     name: "Tajikistan",
@@ -2026,6 +2238,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["tg-TJ", "ru-TJ"],
+    currency: "TJS",
   },
   {
     name: "Tanzania, United Republic of",
@@ -2035,6 +2248,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["sw-TZ", "en-TZ"],
+    currency: "TZS",
   },
   {
     name: "Thailand",
@@ -2044,6 +2258,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["th-TH"],
+    currency: "THB",
   },
   {
     name: "Timor-Leste",
@@ -2053,6 +2268,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["tet-TL", "pt-TL"],
+    currency: "USD",
   },
   {
     name: "Togo",
@@ -2062,6 +2278,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["fr-TG"],
+    currency: "XOF",
   },
   {
     name: "Tokelau",
@@ -2071,6 +2288,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["tkl-TK", "en-TK"],
+    currency: "NZD",
   },
   {
     name: "Tonga",
@@ -2080,6 +2298,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["to-TO", "en-TO"],
+    currency: "TOP",
   },
   {
     name: "Trinidad and Tobago",
@@ -2089,6 +2308,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America", "Africa"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["en-TT"],
+    currency: "TTD",
   },
   {
     name: "Tunisia",
@@ -2098,6 +2318,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-TN"],
+    currency: "TND",
   },
   {
     name: "Turkey",
@@ -2107,6 +2328,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia", "Europe"],
     regions: ["EMEA"],
     dialects: ["tr-TR"],
+    currency: "TRY",
   },
   {
     name: "Turkmenistan",
@@ -2116,6 +2338,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["tk-TM", "ru-TM"],
+    currency: "TMT",
   },
   {
     name: "Turks and Caicos Islands",
@@ -2125,6 +2348,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-TC"],
+    currency: "USD",
   },
   {
     name: "Tuvalu",
@@ -2134,6 +2358,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["tvl-TV", "en-TV"],
+    currency: "AUD",
   },
   {
     name: "Uganda",
@@ -2143,6 +2368,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["en-UG", "lg-UG", "sw-UG"],
+    currency: "UGX",
   },
   {
     name: "Ukraine",
@@ -2152,6 +2378,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["uk-UA"],
+    currency: "UAH",
   },
   {
     name: "United Arab Emirates",
@@ -2161,6 +2388,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-AE"],
+    currency: "AED",
   },
   {
     name: "United Kingdom of Great Britain and Northern Ireland",
@@ -2170,6 +2398,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["en-GB", "gd-GB", "cy-GB", "ga-GB", "kw-GB", "sco-GB"],
+    currency: "GBP",
   },
   {
     name: "United States Minor Outlying Islands",
@@ -2179,6 +2408,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["en-UM"],
+    currency: "USD",
   },
   {
     name: "United States of America",
@@ -2188,6 +2418,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "NA"],
     dialects: ["en-US"],
+    currency: "USD",
   },
   {
     name: "Uruguay",
@@ -2197,6 +2428,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["es-UY"],
+    currency: "UYU",
   },
   {
     name: "Uzbekistan",
@@ -2206,6 +2438,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["uz-UZ", "ru-UZ"],
+    currency: "UZS",
   },
   {
     name: "Vanuatu",
@@ -2215,6 +2448,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: ["bi-VU", "en-VU", "fr-VU"],
+    currency: "VUV",
   },
   {
     name: "Bolivarian Republic of Venezuela",
@@ -2224,6 +2458,7 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: ["es-VE"],
+    currency: "VES",
   },
   {
     name: "Vietnam",
@@ -2233,6 +2468,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: ["vi-VN"],
+    currency: "VND",
   },
   {
     name: "Virgin Islands (British)",
@@ -2242,6 +2478,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
     dialects: ["en-VG"],
+    currency: "USD",
   },
   {
     name: "Virgin Islands (U.S.)",
@@ -2251,6 +2488,7 @@ export const countries: Array<ISO3166> = [
     continents: ["North America"],
     regions: ["AMER", "NA"],
     dialects: ["en-VI"],
+    currency: "USD",
   },
   {
     name: "Wallis and Futuna",
@@ -2263,6 +2501,7 @@ export const countries: Array<ISO3166> = [
       "fr-WF",
       // Wallisian (wls) and Futunan (fud) - no 639-1
     ],
+    currency: "XPF",
   },
   {
     name: "Western Sahara",
@@ -2272,6 +2511,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-EH", "es-EH"],
+    currency: "MAD",
   },
   {
     name: "Yemen",
@@ -2281,6 +2521,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
     dialects: ["ar-YE"],
+    currency: "YER",
   },
   {
     name: "Zambia",
@@ -2290,6 +2531,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["en-ZM"],
+    currency: "ZMW",
   },
   {
     name: "Zimbabwe",
@@ -2299,6 +2541,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: ["en-ZW", "sn-ZW", "nd-ZW"],
+    currency: "ZWG",
   },
   {
     name: "Åland Islands",
@@ -2308,6 +2551,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: ["sv-AX"],
+    currency: "EUR",
   },
 ];
 

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { languages } from "../languages";
 import { dialects } from "../dialects";
-import { language } from "../types";
+import { languageName } from "../types";
 
 describe("verification supported data (languages & dialects)", () => {
   it("should support 389 dialects", () => {
@@ -13,7 +13,7 @@ describe("verification supported data (languages & dialects)", () => {
   });
 
   it("should have 184 iso-639-1 codes", () => {
-    expect(Object.keys(language.Values).length).toBe(184);
+    expect(Object.keys(languageName.Values).length).toBe(184);
   });
 
   it("should have only unique dialects", () => {

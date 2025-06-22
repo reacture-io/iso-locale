@@ -5,6 +5,7 @@ export default defineConfig({
     index: "src/index.ts",
     "countries/index": "src/countries/index.ts",
     "languages/index": "src/languages/index.ts",
+    "currencies/index": "src/currencies/index.ts",
   },
   outDir: "dist",
   format: ["esm", "cjs"],
