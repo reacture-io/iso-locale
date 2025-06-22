@@ -1,9 +1,5 @@
-import { z } from "zod";
-import type { iso639 } from "../languages/iso-639";
-import type { Continent } from "./continent";
-import type { Region } from "./region";
-import type { Dialect } from "../languages/dialect";
 import type { ISO3166 } from "./iso-3166";
+import type { Continent, Region } from "./types";
 
 export const countries: Array<ISO3166> = [
   {

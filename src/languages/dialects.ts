@@ -1,4 +1,4 @@
-import type { Dialect } from "./dialect";
+import type { Dialect } from "./types";
 
 export const dialects: Array<Dialect> = [
   {

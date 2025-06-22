@@ -1,11 +1,11 @@
 import { z } from "zod";
-import { isValidDialect, type Dialect } from "../languages/dialect";
 import { Alpha2, isValidAlpha2 } from "./alpha2";
 import { isValidAlpha3, type Alpha3 } from "./alpha3";
 import { isValidContinent, type Continent } from "./continent";
 import { isValidCountry, type Country } from "./country";
 import { isValidNumeric, type Numeric } from "./numeric";
 import { isValidRegion, type Region } from "./region";
+import { isValidDialect, type Dialect } from "../../languages";
 
 export const iso3166 = z.object({
   name: z.custom<Country>((value) => isValidCountry(value)),
