@@ -15,4 +15,9 @@ describe("verification supported data (languages & dialects)", () => {
   it("should have 184 iso-639-1 codes", () => {
     expect(Object.keys(language.Values).length).toBe(184);
   });
+
+  it("should have only unique dialects", () => {
+    const bcp47s = dialects.map((dialect) => dialect.bcp47);
+    expect(new Set(bcp47s).size).toBe(dialects.length);
+  });
 });

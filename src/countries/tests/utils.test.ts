@@ -1,13 +1,5 @@
 import { describe, expect, it } from "vitest";
-import {
-  findCountryByAlpha2,
-  findCountryByAlpha3,
-  findCountryByNumeric,
-  findCountryByName,
-  isPartOfRegion,
-  getCountriesByRegion,
-  getCountriesByContinent,
-} from "../utils";
+import { getCountriesByContinent, getCountriesByRegion } from "../utils";
 
 describe("countries utils", () => {
   it("should have 129 countries in EMEA", () => {

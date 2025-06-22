@@ -1,3 +1,4 @@
+import { assert } from "../utils/assert";
 import { countries } from "./countries";
 import type {
   Alpha2,
@@ -9,20 +10,28 @@ import type {
   Region,
 } from "./types";
 
-export function findCountryByAlpha2(alpha2: Alpha2) {
-  return countries.find((country) => country.alpha2 === alpha2);
+export function getCountryByAlpha2(alpha2: Alpha2): ISO3166 {
+  const country = countries.find((country) => country.alpha2 === alpha2);
+  assert(country, `Country with alpha2 ${alpha2} not found`);
+  return country;
 }
 
-export function findCountryByAlpha3(alpha3: Alpha3) {
-  return countries.find((country) => country.alpha3 === alpha3);
+export function getCountryByAlpha3(alpha3: Alpha3): ISO3166 {
+  const country = countries.find((country) => country.alpha3 === alpha3);
+  assert(country, `Country with alpha3 ${alpha3} not found`);
+  return country;
 }
 
-export function findCountryByNumeric(numeric: Numeric) {
-  return countries.find((country) => country.numeric === numeric);
+export function getCountryByNumeric(numeric: Numeric): ISO3166 {
+  const country = countries.find((country) => country.numeric === numeric);
+  assert(country, `Country with numeric ${numeric} not found`);
+  return country;
 }
 
-export function findCountryByName(name: Country) {
-  return countries.find((country) => country.name === name);
+export function getCountryByName(name: Country): ISO3166 {
+  const country = countries.find((country) => country.name === name);
+  assert(country, `Country with name ${name} not found`);
+  return country;
 }
 
 export function isPartOfRegion(country: ISO3166, region: Region) {
