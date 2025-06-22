@@ -12,7 +12,12 @@ describe("languages utils", () => {
   });
 
   it("should find dialect by iso-639-1 code", () => {
-    const dialects = getDialectsByCode("en");
-    console.log(dialects);
+    const dialects = getDialectsByCode("nl");
+    expect(dialects.length).toBe(7);
+  });
+
+  it("should find dialect by iso-639-3 code", () => {
+    const dialects = getDialectsByCode("nld");
+    expect(dialects.length).toBe(7);
   });
 });

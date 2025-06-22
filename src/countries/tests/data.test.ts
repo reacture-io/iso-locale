@@ -13,4 +13,10 @@ describe("verification supported data (countries, continents, regions)", () => {
   it("should support 7 regions", () => {
     expect(regions.length).toBe(7);
   });
+
+  it("should have atleast 1 dialect for each country", () => {
+    countries.forEach((country) => {
+      expect(country.dialects.length).toBeGreaterThan(0);
+    });
+  });
 });

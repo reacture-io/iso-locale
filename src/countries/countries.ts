@@ -8,10 +8,7 @@ export const countries: Array<ISO3166> = [
     numeric: "004",
     continents: ["Asia"],
     regions: ["APAC", "MEA"],
-    dialects: [
-      { dialect: "Dari", native: "دری", iso639_1: "fa", bcp47: "fa-AF" }, // Dari is a dialect of Persian (fa)
-      { dialect: "Pashto", native: "پښتو", iso639_1: "ps", bcp47: "ps-AF" },
-    ],
+    dialects: ["fa-AF", "ps-AF"],
   },
   {
     name: "Albania",
@@ -20,9 +17,7 @@ export const countries: Array<ISO3166> = [
     numeric: "008",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "Albanian", native: "Shqip", iso639_1: "sq", bcp47: "sq-AL" },
-    ],
+    dialects: ["sq-AL"],
   },
   {
     name: "Algeria",
@@ -32,7 +27,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-DZ" },
+      "ar-DZ",
       // While Berber is widely spoken, "Berber" is a language family.
       // For more specific dialect, a different ISO code might be needed or a broader BCP47 tag.
       // Leaving it out for now to adhere strictly to singular languages with iso639_1 codes.
@@ -45,20 +40,7 @@ export const countries: Array<ISO3166> = [
     numeric: "016",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-AS",
-      },
-      {
-        dialect: "Samoan",
-        native: "Gagana Sāmoa",
-        iso639_1: "sm",
-        bcp47: "sm-AS",
-      },
-    ],
+    dialects: ["en-AS", "sm-AS"],
   },
   {
     name: "Andorra",
@@ -67,9 +49,7 @@ export const countries: Array<ISO3166> = [
     numeric: "020",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "Catalan", native: "Català", iso639_1: "ca", bcp47: "ca-AD" },
-    ],
+    dialects: ["ca-AD"],
   },
   {
     name: "Angola",
@@ -78,14 +58,7 @@ export const countries: Array<ISO3166> = [
     numeric: "024",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Portuguese",
-        native: "Português",
-        iso639_1: "pt",
-        bcp47: "pt-AO",
-      },
-    ],
+    dialects: ["pt-AO"],
   },
   {
     name: "Anguilla",
@@ -94,14 +67,7 @@ export const countries: Array<ISO3166> = [
     numeric: "660",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-AI",
-      },
-    ],
+    dialects: ["en-AI"],
   },
   {
     name: "Antarctica",
@@ -110,32 +76,7 @@ export const countries: Array<ISO3166> = [
     numeric: "010",
     continents: ["Antarctica"],
     regions: [],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-AQ",
-      },
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-AQ",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-AQ",
-      },
-      {
-        dialect: "Russian",
-        native: "русский язык",
-        iso639_1: "ru",
-        bcp47: "ru-AQ",
-      },
-    ],
+    dialects: ["en-AQ", "es-AQ", "fr-AQ", "ru-AQ"],
   },
   {
     name: "Antigua and Barbuda",
@@ -144,14 +85,7 @@ export const countries: Array<ISO3166> = [
     numeric: "028",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-AG",
-      },
-    ],
+    dialects: ["en-AG"],
   },
   {
     name: "Argentina",
@@ -160,14 +94,7 @@ export const countries: Array<ISO3166> = [
     numeric: "032",
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-AR",
-      },
-    ],
+    dialects: ["es-AR"],
   },
   {
     name: "Armenia",
@@ -176,14 +103,7 @@ export const countries: Array<ISO3166> = [
     numeric: "051",
     continents: ["Asia", "Europe"],
     regions: ["EMEA", "APAC"],
-    dialects: [
-      {
-        dialect: "Armenian",
-        native: "Հայերեն",
-        iso639_1: "hy",
-        bcp47: "hy-AM",
-      },
-    ],
+    dialects: ["hy-AM"],
   },
   {
     name: "Aruba",
@@ -192,20 +112,7 @@ export const countries: Array<ISO3166> = [
     numeric: "533",
     continents: ["South America", "Europe"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "Dutch",
-        native: "Nederlands",
-        iso639_1: "nl",
-        bcp47: "nl-AW",
-      },
-      {
-        dialect: "Papiamento",
-        native: "Papiamentu",
-        iso639_3: "pap",
-        bcp47: "pap-AW",
-      }, // ISO 639-3 code, as it doesn't have 639-1
-    ],
+    dialects: ["nl-AW", "pap-AW"],
   },
   {
     name: "Australia",
@@ -214,14 +121,7 @@ export const countries: Array<ISO3166> = [
     numeric: "036",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-AU",
-      },
-    ],
+    dialects: ["en-AU"],
   },
   {
     name: "Austria",
@@ -230,9 +130,7 @@ export const countries: Array<ISO3166> = [
     numeric: "040",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "German", native: "Deutsch", iso639_1: "de", bcp47: "de-AT" },
-    ],
+    dialects: ["de-AT"],
   },
   {
     name: "Azerbaijan",
@@ -241,14 +139,7 @@ export const countries: Array<ISO3166> = [
     numeric: "031",
     continents: ["Asia", "Europe"],
     regions: ["EMEA", "APAC"],
-    dialects: [
-      {
-        dialect: "Azerbaijani",
-        native: "Azərbaycan dili",
-        iso639_1: "az",
-        bcp47: "az-AZ",
-      },
-    ],
+    dialects: ["az-AZ"],
   },
   {
     name: "Bahamas",
@@ -257,14 +148,7 @@ export const countries: Array<ISO3166> = [
     numeric: "044",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-BS",
-      },
-    ],
+    dialects: ["en-BS"],
   },
   {
     name: "Bahrain",
@@ -273,9 +157,7 @@ export const countries: Array<ISO3166> = [
     numeric: "048",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-BH" },
-    ],
+    dialects: ["ar-BH"],
   },
   {
     name: "Bangladesh",
@@ -284,9 +166,7 @@ export const countries: Array<ISO3166> = [
     numeric: "050",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      { dialect: "Bengali", native: "বাংলা", iso639_1: "bn", bcp47: "bn-BD" },
-    ],
+    dialects: ["bn-BD"],
   },
   {
     name: "Barbados",
@@ -295,14 +175,7 @@ export const countries: Array<ISO3166> = [
     numeric: "052",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-BB",
-      },
-    ],
+    dialects: ["en-BB"],
   },
   {
     name: "Belarus",
@@ -311,20 +184,7 @@ export const countries: Array<ISO3166> = [
     numeric: "112",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Belarusian",
-        native: "беларуская мова",
-        iso639_1: "be",
-        bcp47: "be-BY",
-      },
-      {
-        dialect: "Russian",
-        native: "русский язык",
-        iso639_1: "ru",
-        bcp47: "ru-BY",
-      },
-    ],
+    dialects: ["be-BY", "ru-BY"],
   },
   {
     name: "Belgium",
@@ -333,21 +193,7 @@ export const countries: Array<ISO3166> = [
     numeric: "056",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Flemish",
-        native: "Vlaams",
-        iso639_1: "nl",
-        bcp47: "nl-BE",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-BE",
-      },
-      { dialect: "German", native: "Deutsch", iso639_1: "de", bcp47: "de-BE" },
-    ],
+    dialects: ["nl-BE", "fr-BE", "de-BE"],
   },
   {
     name: "Belize",
@@ -356,14 +202,7 @@ export const countries: Array<ISO3166> = [
     numeric: "084",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-BZ",
-      },
-    ],
+    dialects: ["en-BZ"],
   },
   {
     name: "Benin",
@@ -372,14 +211,7 @@ export const countries: Array<ISO3166> = [
     numeric: "204",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-BJ",
-      },
-    ],
+    dialects: ["fr-BJ"],
   },
   {
     name: "Bermuda",
@@ -388,14 +220,7 @@ export const countries: Array<ISO3166> = [
     numeric: "060",
     continents: ["North America"],
     regions: ["AMER", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-BM",
-      },
-    ],
+    dialects: ["en-BM"],
   },
   {
     name: "Bhutan",
@@ -404,14 +229,7 @@ export const countries: Array<ISO3166> = [
     numeric: "064",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Dzongkha",
-        native: "རྫོང་ཁ",
-        iso639_1: "dz",
-        bcp47: "dz-BT",
-      },
-    ],
+    dialects: ["dz-BT"],
   },
   {
     name: "Plurinational State of Bolivia",
@@ -421,30 +239,9 @@ export const countries: Array<ISO3166> = [
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
     dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-BO",
-      },
-      {
-        dialect: "Quechua",
-        native: "Runa simi",
-        iso639_1: "qu",
-        bcp47: "qu-BO",
-      },
-      {
-        dialect: "Aymara",
-        native: "Aymar aru",
-        iso639_1: "ay",
-        bcp47: "ay-BO",
-      },
-      {
-        dialect: "Guarani",
-        native: "Avañe'ẽ",
-        iso639_1: "gn",
-        bcp47: "gn-BO",
-      },
+      "es-BO",
+      "ay-BO",
+      "gn-BO",
       // Bolivia has 37 official languages, adding major ones.
     ],
   },
@@ -455,20 +252,7 @@ export const countries: Array<ISO3166> = [
     numeric: "535",
     continents: ["South America", "Europe"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "Dutch",
-        native: "Nederlands",
-        iso639_1: "nl",
-        bcp47: "nl-BQ",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-BQ",
-      },
-    ],
+    dialects: ["nl-BQ", "en-BQ"],
   },
   {
     name: "Bosnia and Herzegovina",
@@ -477,26 +261,7 @@ export const countries: Array<ISO3166> = [
     numeric: "070",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Bosnian",
-        native: "bosanski",
-        iso639_1: "bs",
-        bcp47: "bs-BA",
-      },
-      {
-        dialect: "Croatian",
-        native: "hrvatski",
-        iso639_1: "hr",
-        bcp47: "hr-BA",
-      },
-      {
-        dialect: "Serbian",
-        native: "српски језик",
-        iso639_1: "sr",
-        bcp47: "sr-BA",
-      },
-    ],
+    dialects: ["bs-BA", "hr-BA", "sr-BA"],
   },
   {
     name: "Botswana",
@@ -505,20 +270,7 @@ export const countries: Array<ISO3166> = [
     numeric: "072",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-BW",
-      },
-      {
-        dialect: "Tswana",
-        native: "Setswana",
-        iso639_1: "tn",
-        bcp47: "tn-BW",
-      },
-    ],
+    dialects: ["en-BW", "tn-BW"],
   },
   {
     name: "Bouvet Island",
@@ -527,14 +279,7 @@ export const countries: Array<ISO3166> = [
     numeric: "074",
     continents: ["Antarctica"],
     regions: [],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-BV",
-      },
-    ],
+    dialects: ["en-BV"],
   },
   {
     name: "Brazil",
@@ -543,14 +288,7 @@ export const countries: Array<ISO3166> = [
     numeric: "076",
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "Portuguese",
-        native: "Português",
-        iso639_1: "pt",
-        bcp47: "pt-BR",
-      },
-    ],
+    dialects: ["pt-BR"],
   },
   {
     name: "British Indian Ocean Territory",
@@ -559,14 +297,7 @@ export const countries: Array<ISO3166> = [
     numeric: "086",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-IO",
-      },
-    ],
+    dialects: ["en-IO"],
   },
   {
     name: "Brunei Darussalam",
@@ -575,14 +306,7 @@ export const countries: Array<ISO3166> = [
     numeric: "096",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Malay",
-        native: "Bahasa Melayu",
-        iso639_1: "ms",
-        bcp47: "ms-BN",
-      },
-    ],
+    dialects: ["ms-BN"],
   },
   {
     name: "Bulgaria",
@@ -591,14 +315,7 @@ export const countries: Array<ISO3166> = [
     numeric: "100",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Bulgarian",
-        native: "български език",
-        iso639_1: "bg",
-        bcp47: "bg-BG",
-      },
-    ],
+    dialects: ["bg-BG"],
   },
   {
     name: "Burkina Faso",
@@ -607,14 +324,7 @@ export const countries: Array<ISO3166> = [
     numeric: "854",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-BF",
-      },
-    ],
+    dialects: ["fr-BF"],
   },
   {
     name: "Burundi",
@@ -623,26 +333,7 @@ export const countries: Array<ISO3166> = [
     numeric: "108",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Kirundi",
-        native: "Ikirundi",
-        iso639_1: "rn",
-        bcp47: "rn-BI",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-BI",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-BI",
-      },
-    ],
+    dialects: ["rn-BI", "fr-BI", "en-BI"],
   },
   {
     name: "Cape Verde",
@@ -651,14 +342,7 @@ export const countries: Array<ISO3166> = [
     numeric: "132",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Portuguese",
-        native: "Português",
-        iso639_1: "pt",
-        bcp47: "pt-CV",
-      },
-    ],
+    dialects: ["pt-CV"],
   },
   {
     name: "Cambodia",
@@ -667,14 +351,7 @@ export const countries: Array<ISO3166> = [
     numeric: "116",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Central Khmer",
-        native: "ភាសាខ្មែរ",
-        iso639_1: "km",
-        bcp47: "km-KH",
-      },
-    ],
+    dialects: ["km-KH"],
   },
   {
     name: "Cameroon",
@@ -683,20 +360,7 @@ export const countries: Array<ISO3166> = [
     numeric: "120",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-CM",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-CM",
-      },
-    ],
+    dialects: ["en-CM", "fr-CM"],
   },
   {
     name: "Canada",
@@ -705,20 +369,7 @@ export const countries: Array<ISO3166> = [
     numeric: "124",
     continents: ["North America"],
     regions: ["AMER", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-CA",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-CA",
-      },
-    ],
+    dialects: ["en-CA", "fr-CA"],
   },
   {
     name: "Cayman Islands",
@@ -727,14 +378,7 @@ export const countries: Array<ISO3166> = [
     numeric: "136",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-KY",
-      },
-    ],
+    dialects: ["en-KY"],
   },
   {
     name: "Central African Republic",
@@ -743,15 +387,7 @@ export const countries: Array<ISO3166> = [
     numeric: "140",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-CF",
-      },
-      { dialect: "Sango", native: "Sängö", iso639_1: "sg", bcp47: "sg-CF" },
-    ],
+    dialects: ["fr-CF", "sg-CF"],
   },
   {
     name: "Chad",
@@ -760,15 +396,7 @@ export const countries: Array<ISO3166> = [
     numeric: "148",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-TD" },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-TD",
-      },
-    ],
+    dialects: ["ar-TD", "fr-TD"],
   },
   {
     name: "Chile",
@@ -777,14 +405,7 @@ export const countries: Array<ISO3166> = [
     numeric: "152",
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-CL",
-      },
-    ],
+    dialects: ["es-CL"],
   },
   {
     name: "China",
@@ -793,14 +414,7 @@ export const countries: Array<ISO3166> = [
     numeric: "156",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Chinese",
-        native: "中文",
-        iso639_1: "zh",
-        bcp47: "zh-Hans-CN",
-      }, // Simplified Chinese for Mainland China
-    ],
+    dialects: ["zh-Hans-CN"],
   },
   {
     name: "Christmas Island",
@@ -809,14 +423,7 @@ export const countries: Array<ISO3166> = [
     numeric: "162",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-CX",
-      },
-    ],
+    dialects: ["en-CX"],
   },
   {
     name: "Cocos (Keeling) Islands",
@@ -825,14 +432,7 @@ export const countries: Array<ISO3166> = [
     numeric: "166",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-CC",
-      },
-    ],
+    dialects: ["en-CC"],
   },
   {
     name: "Colombia",
@@ -841,14 +441,7 @@ export const countries: Array<ISO3166> = [
     numeric: "170",
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-CO",
-      },
-    ],
+    dialects: ["es-CO"],
   },
   {
     name: "Comoros",
@@ -857,20 +450,7 @@ export const countries: Array<ISO3166> = [
     numeric: "174",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Comorian",
-        native: "Shimasiwa",
-        iso639_1: "ar",
-        bcp47: "ar-KM",
-      }, // Comorian is derived from Arabic, no direct 639-1 code
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-KM",
-      },
-    ],
+    dialects: ["ar-KM", "fr-KM"],
   },
   {
     name: "Congo", // Republic of the Congo
@@ -879,21 +459,7 @@ export const countries: Array<ISO3166> = [
     numeric: "178",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-CG",
-      },
-      {
-        dialect: "Lingala",
-        native: "Lingála",
-        iso639_1: "ln",
-        bcp47: "ln-CG",
-      },
-      { dialect: "Kongo", native: "Kikongo", iso639_1: "kg", bcp47: "kg-CG" },
-    ],
+    dialects: ["fr-CG", "ln-CG", "kg-CG"],
   },
   {
     name: "Democratic Republic of Congo",
@@ -902,33 +468,7 @@ export const countries: Array<ISO3166> = [
     numeric: "180",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-CD",
-      },
-      {
-        dialect: "Lingala",
-        native: "Lingála",
-        iso639_1: "ln",
-        bcp47: "ln-CD",
-      },
-      { dialect: "Kongo", native: "Kikongo", iso639_1: "kg", bcp47: "kg-CD" },
-      {
-        dialect: "Swahili",
-        native: "Kiswahili",
-        iso639_1: "sw",
-        bcp47: "sw-CD",
-      },
-      {
-        dialect: "Luba-Katanga",
-        native: "Tshiluba",
-        iso639_1: "lu",
-        bcp47: "lu-CD",
-      },
-    ],
+    dialects: ["fr-CD", "ln-CD", "kg-CD", "sw-CD", "lu-CD"],
   },
   {
     name: "Cook Islands",
@@ -937,15 +477,7 @@ export const countries: Array<ISO3166> = [
     numeric: "184",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-CK",
-      },
-      // Cook Islands Māori (Rarotongan) - no direct ISO 639-1
-    ],
+    dialects: ["en-CK"],
   },
   {
     name: "Costa Rica",
@@ -954,14 +486,7 @@ export const countries: Array<ISO3166> = [
     numeric: "188",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-CR",
-      },
-    ],
+    dialects: ["es-CR"],
   },
   {
     name: "Côte d'Ivoire",
@@ -970,14 +495,7 @@ export const countries: Array<ISO3166> = [
     numeric: "384",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-CI",
-      },
-    ],
+    dialects: ["fr-CI"],
   },
   {
     name: "Croatia",
@@ -986,14 +504,7 @@ export const countries: Array<ISO3166> = [
     numeric: "191",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Croatian",
-        native: "hrvatski",
-        iso639_1: "hr",
-        bcp47: "hr-HR",
-      },
-    ],
+    dialects: ["hr-HR"],
   },
   {
     name: "Cuba",
@@ -1002,14 +513,7 @@ export const countries: Array<ISO3166> = [
     numeric: "192",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-CU",
-      },
-    ],
+    dialects: ["es-CU"],
   },
   {
     name: "Curaçao",
@@ -1018,26 +522,7 @@ export const countries: Array<ISO3166> = [
     numeric: "531",
     continents: ["South America", "Europe"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "Dutch",
-        native: "Nederlands",
-        iso639_1: "nl",
-        bcp47: "nl-CW",
-      },
-      {
-        dialect: "Papiamento",
-        native: "Papiamentu",
-        iso639_3: "pap",
-        bcp47: "pap-CW",
-      }, // ISO 639-3 code, as it doesn't have 639-1
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-CW",
-      },
-    ],
+    dialects: ["nl-CW", "en-CW"],
   },
   {
     name: "Cyprus",
@@ -1046,10 +531,7 @@ export const countries: Array<ISO3166> = [
     numeric: "196",
     continents: ["Europe", "Asia"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "Greek", native: "Ελληνικά", iso639_1: "el", bcp47: "el-CY" },
-      { dialect: "Turkish", native: "Türkçe", iso639_1: "tr", bcp47: "tr-CY" },
-    ],
+    dialects: ["el-CY", "tr-CY"],
   },
   {
     name: "Czechia",
@@ -1058,9 +540,7 @@ export const countries: Array<ISO3166> = [
     numeric: "203",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "Czech", native: "čeština", iso639_1: "cs", bcp47: "cs-CZ" },
-    ],
+    dialects: ["cs-CZ"],
   },
   {
     name: "Denmark",
@@ -1069,9 +549,7 @@ export const countries: Array<ISO3166> = [
     numeric: "208",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "Danish", native: "Dansk", iso639_1: "da", bcp47: "da-DK" },
-    ],
+    dialects: ["da-DK"],
   },
   {
     name: "Djibouti",
@@ -1080,22 +558,7 @@ export const countries: Array<ISO3166> = [
     numeric: "262",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-DJ" },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-DJ",
-      },
-      {
-        dialect: "Somali",
-        native: "Af Soomaali",
-        iso639_1: "so",
-        bcp47: "so-DJ",
-      },
-      { dialect: "Afar", native: "Qafar af", iso639_1: "aa", bcp47: "aa-DJ" },
-    ],
+    dialects: ["ar-DJ", "fr-DJ", "so-DJ", "aa-DJ"],
   },
   {
     name: "Dominica",
@@ -1104,14 +567,7 @@ export const countries: Array<ISO3166> = [
     numeric: "212",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-DM",
-      },
-    ],
+    dialects: ["en-DM"],
   },
   {
     name: "Dominican Republic",
@@ -1120,14 +576,7 @@ export const countries: Array<ISO3166> = [
     numeric: "214",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-DO",
-      },
-    ],
+    dialects: ["es-DO"],
   },
   {
     name: "Ecuador",
@@ -1136,20 +585,7 @@ export const countries: Array<ISO3166> = [
     numeric: "218",
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-EC",
-      },
-      {
-        dialect: "Quechua",
-        native: "Runa simi",
-        iso639_1: "qu",
-        bcp47: "qu-EC",
-      },
-    ],
+    dialects: ["es-EC", "qu-EC"],
   },
   {
     name: "Egypt",
@@ -1158,9 +594,7 @@ export const countries: Array<ISO3166> = [
     numeric: "818",
     continents: ["Africa", "Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-EG" },
-    ],
+    dialects: ["ar-EG"],
   },
   {
     name: "El Salvador",
@@ -1169,14 +603,7 @@ export const countries: Array<ISO3166> = [
     numeric: "222",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-SV",
-      },
-    ],
+    dialects: ["es-SV"],
   },
   {
     name: "Equatorial Guinea",
@@ -1185,26 +612,7 @@ export const countries: Array<ISO3166> = [
     numeric: "226",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-GQ",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-GQ",
-      },
-      {
-        dialect: "Portuguese",
-        native: "Português",
-        iso639_1: "pt",
-        bcp47: "pt-GQ",
-      },
-    ],
+    dialects: ["es-GQ", "fr-GQ", "pt-GQ"],
   },
   {
     name: "Eritrea",
@@ -1213,16 +621,7 @@ export const countries: Array<ISO3166> = [
     numeric: "232",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Tigrinya", native: "ትግርኛ", iso639_1: "ti", bcp47: "ti-ER" },
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-ER" },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-ER",
-      },
-    ],
+    dialects: ["ti-ER", "ar-ER", "en-ER"],
   },
   {
     name: "Estonia",
@@ -1231,14 +630,7 @@ export const countries: Array<ISO3166> = [
     numeric: "233",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Estonian",
-        native: "eesti keel",
-        iso639_1: "et",
-        bcp47: "et-EE",
-      },
-    ],
+    dialects: ["et-EE"],
   },
   {
     name: "Eswatini",
@@ -1247,15 +639,7 @@ export const countries: Array<ISO3166> = [
     numeric: "748",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-SZ",
-      },
-      { dialect: "Swati", native: "SiSwati", iso639_1: "ss", bcp47: "ss-SZ" },
-    ],
+    dialects: ["en-SZ", "ss-SZ"],
   },
   {
     name: "Ethiopia",
@@ -1264,16 +648,7 @@ export const countries: Array<ISO3166> = [
     numeric: "231",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Amharic", native: "አማርኛ", iso639_1: "am", bcp47: "am-ET" },
-      {
-        dialect: "Oromo",
-        native: "Afaan Oromoo",
-        iso639_1: "om",
-        bcp47: "om-ET",
-      },
-      { dialect: "Tigrinya", native: "ትግርኛ", iso639_1: "ti", bcp47: "ti-ET" },
-    ],
+    dialects: ["am-ET", "om-ET", "ti-ET"],
   },
   {
     name: "Falkland Islands",
@@ -1282,14 +657,7 @@ export const countries: Array<ISO3166> = [
     numeric: "238",
     continents: ["South America"],
     regions: ["AMER", "SA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-FK",
-      },
-    ],
+    dialects: ["en-FK"],
   },
   {
     name: "Faroe Islands",
@@ -1298,15 +666,7 @@ export const countries: Array<ISO3166> = [
     numeric: "234",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Faroese",
-        native: "føroyskt",
-        iso639_1: "fo",
-        bcp47: "fo-FO",
-      },
-      { dialect: "Danish", native: "Dansk", iso639_1: "da", bcp47: "da-FO" },
-    ],
+    dialects: ["fo-FO", "da-FO"],
   },
   {
     name: "Fiji",
@@ -1315,20 +675,7 @@ export const countries: Array<ISO3166> = [
     numeric: "242",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-FJ",
-      },
-      {
-        dialect: "Fijian",
-        native: "Na Vosa Vakaviti",
-        iso639_1: "fj",
-        bcp47: "fj-FJ",
-      },
-    ],
+    dialects: ["en-FJ", "fj-FJ"],
   },
   {
     name: "Finland",
@@ -1337,15 +684,7 @@ export const countries: Array<ISO3166> = [
     numeric: "246",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "Finnish", native: "suomi", iso639_1: "fi", bcp47: "fi-FI" },
-      {
-        dialect: "Swedish",
-        native: "Svenska",
-        iso639_1: "sv",
-        bcp47: "sv-FI",
-      },
-    ],
+    dialects: ["fi-FI", "sv-FI"],
   },
   {
     name: "France",
@@ -1354,14 +693,7 @@ export const countries: Array<ISO3166> = [
     numeric: "250",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-FR",
-      },
-    ],
+    dialects: ["fr-FR"],
   },
   {
     name: "French Guiana",
@@ -1370,14 +702,7 @@ export const countries: Array<ISO3166> = [
     numeric: "254",
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-GF",
-      },
-    ],
+    dialects: ["fr-GF"],
   },
   {
     name: "French Polynesia",
@@ -1386,20 +711,7 @@ export const countries: Array<ISO3166> = [
     numeric: "258",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-PF",
-      },
-      {
-        dialect: "Tahitian",
-        native: "Reo Tahiti",
-        iso639_1: "ty",
-        bcp47: "ty-PF",
-      }, // ISO 639-2/3
-    ],
+    dialects: ["fr-PF", "ty-PF"],
   },
   {
     name: "French Southern Territories",
@@ -1408,14 +720,7 @@ export const countries: Array<ISO3166> = [
     numeric: "260",
     continents: ["Antarctica"],
     regions: [],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-TF",
-      },
-    ],
+    dialects: ["fr-TF"],
   },
   {
     name: "Gabon",
@@ -1424,14 +729,7 @@ export const countries: Array<ISO3166> = [
     numeric: "266",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-GA",
-      },
-    ],
+    dialects: ["fr-GA"],
   },
   {
     name: "Gambia",
@@ -1440,14 +738,7 @@ export const countries: Array<ISO3166> = [
     numeric: "270",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-GM",
-      },
-    ],
+    dialects: ["en-GM"],
   },
   {
     name: "Georgia",
@@ -1456,14 +747,7 @@ export const countries: Array<ISO3166> = [
     numeric: "268",
     continents: ["Asia", "Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Georgian",
-        native: "ქართული",
-        iso639_1: "ka",
-        bcp47: "ka-GE",
-      },
-    ],
+    dialects: ["ka-GE"],
   },
   {
     name: "Germany",
@@ -1472,9 +756,7 @@ export const countries: Array<ISO3166> = [
     numeric: "276",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "German", native: "Deutsch", iso639_1: "de", bcp47: "de-DE" },
-    ],
+    dialects: ["de-DE"],
   },
   {
     name: "Ghana",
@@ -1483,14 +765,7 @@ export const countries: Array<ISO3166> = [
     numeric: "288",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-GH",
-      },
-    ],
+    dialects: ["en-GH"],
   },
   {
     name: "Gibraltar",
@@ -1499,14 +774,7 @@ export const countries: Array<ISO3166> = [
     numeric: "292",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-GI",
-      },
-    ],
+    dialects: ["en-GI"],
   },
   {
     name: "Greece",
@@ -1515,9 +783,7 @@ export const countries: Array<ISO3166> = [
     numeric: "300",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "Greek", native: "Ελληνικά", iso639_1: "el", bcp47: "el-GR" },
-    ],
+    dialects: ["el-GR"],
   },
   {
     name: "Greenland",
@@ -1526,15 +792,7 @@ export const countries: Array<ISO3166> = [
     numeric: "304",
     continents: ["North America"],
     regions: ["AMER", "NA"],
-    dialects: [
-      {
-        dialect: "Kalaallisut",
-        native: "kalaallisut",
-        iso639_1: "kl",
-        bcp47: "kl-GL",
-      },
-      { dialect: "Danish", native: "Dansk", iso639_1: "da", bcp47: "da-GL" },
-    ],
+    dialects: ["kl-GL", "da-GL"],
   },
   {
     name: "Grenada",
@@ -1543,14 +801,7 @@ export const countries: Array<ISO3166> = [
     numeric: "308",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-GD",
-      },
-    ],
+    dialects: ["en-GD"],
   },
   {
     name: "Guadeloupe",
@@ -1559,14 +810,7 @@ export const countries: Array<ISO3166> = [
     numeric: "312",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-GP",
-      },
-    ],
+    dialects: ["fr-GP"],
   },
   {
     name: "Guam",
@@ -1575,20 +819,7 @@ export const countries: Array<ISO3166> = [
     numeric: "316",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-GU",
-      },
-      {
-        dialect: "Chamorro",
-        native: "Finuʼ Chamoru",
-        iso639_1: "ch",
-        bcp47: "ch-GU",
-      },
-    ],
+    dialects: ["en-GU", "ch-GU"],
   },
   {
     name: "Guatemala",
@@ -1597,14 +828,7 @@ export const countries: Array<ISO3166> = [
     numeric: "320",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-GT",
-      },
-    ],
+    dialects: ["es-GT"],
   },
   {
     name: "Guernsey",
@@ -1613,20 +837,7 @@ export const countries: Array<ISO3166> = [
     numeric: "831",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-GG",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-GG",
-      },
-    ],
+    dialects: ["en-GG", "fr-GG"],
   },
   {
     name: "Guinea",
@@ -1635,14 +846,7 @@ export const countries: Array<ISO3166> = [
     numeric: "324",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-GN",
-      },
-    ],
+    dialects: ["fr-GN"],
   },
   {
     name: "Guinea-Bissau",
@@ -1651,14 +855,7 @@ export const countries: Array<ISO3166> = [
     numeric: "624",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Portuguese",
-        native: "Português",
-        iso639_1: "pt",
-        bcp47: "pt-GW",
-      },
-    ],
+    dialects: ["pt-GW"],
   },
   {
     name: "Guyana",
@@ -1667,14 +864,7 @@ export const countries: Array<ISO3166> = [
     numeric: "328",
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-GY",
-      },
-    ],
+    dialects: ["en-GY"],
   },
   {
     name: "Haiti",
@@ -1683,20 +873,7 @@ export const countries: Array<ISO3166> = [
     numeric: "332",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "Haitian",
-        native: "Kreyòl ayisyen",
-        iso639_1: "ht",
-        bcp47: "ht-HT",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-HT",
-      },
-    ],
+    dialects: ["ht-HT", "fr-HT"],
   },
   {
     name: "Heard Island and McDonald Islands",
@@ -1705,14 +882,7 @@ export const countries: Array<ISO3166> = [
     numeric: "334",
     continents: ["Antarctica"],
     regions: [],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-HM",
-      },
-    ],
+    dialects: ["en-HM"],
   },
   {
     name: "Holy See",
@@ -1721,15 +891,7 @@ export const countries: Array<ISO3166> = [
     numeric: "336",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "Latin", native: "Latina", iso639_1: "la", bcp47: "la-VA" },
-      {
-        dialect: "Italian",
-        native: "Italiano",
-        iso639_1: "it",
-        bcp47: "it-VA",
-      },
-    ],
+    dialects: ["la-VA", "it-VA"],
   },
   {
     name: "Honduras",
@@ -1738,14 +900,7 @@ export const countries: Array<ISO3166> = [
     numeric: "340",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-HN",
-      },
-    ],
+    dialects: ["es-HN"],
   },
   {
     name: "Hong Kong",
@@ -1754,20 +909,7 @@ export const countries: Array<ISO3166> = [
     numeric: "344",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Chinese",
-        native: "中文",
-        iso639_1: "zh",
-        bcp47: "zh-Hant-HK",
-      }, // Traditional Chinese for Hong Kong
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-HK",
-      },
-    ],
+    dialects: ["zh-Hant-HK", "en-HK"],
   },
   {
     name: "Hungary",
@@ -1776,14 +918,7 @@ export const countries: Array<ISO3166> = [
     numeric: "348",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Hungarian",
-        native: "Magyar",
-        iso639_1: "hu",
-        bcp47: "hu-HU",
-      },
-    ],
+    dialects: ["hu-HU"],
   },
   {
     name: "Iceland",
@@ -1792,14 +927,7 @@ export const countries: Array<ISO3166> = [
     numeric: "352",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Icelandic",
-        native: "íslenska",
-        iso639_1: "is",
-        bcp47: "is-IS",
-      },
-    ],
+    dialects: ["is-IS"],
   },
   {
     name: "India",
@@ -1809,13 +937,8 @@ export const countries: Array<ISO3166> = [
     continents: ["Asia"],
     regions: ["APAC"],
     dialects: [
-      { dialect: "Hindi", native: "हिन्दी", iso639_1: "hi", bcp47: "hi-IN" },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-IN",
-      },
+      "hi-IN",
+      "en-IN",
       // India has many official languages, including Bengali, Marathi, Telugu, Tamil, Gujarati, etc.
       // For brevity, only the two federal official languages are included.
     ],
@@ -1827,14 +950,7 @@ export const countries: Array<ISO3166> = [
     numeric: "360",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Indonesian",
-        native: "Bahasa Indonesia",
-        iso639_1: "id",
-        bcp47: "id-ID",
-      },
-    ],
+    dialects: ["id-ID"],
   },
   {
     name: "Iran (Islamic Republic of)",
@@ -1843,9 +959,7 @@ export const countries: Array<ISO3166> = [
     numeric: "364",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Persian", native: "فارسی", iso639_1: "fa", bcp47: "fa-IR" },
-    ],
+    dialects: ["fa-IR"],
   },
   {
     name: "Iraq",
@@ -1854,10 +968,7 @@ export const countries: Array<ISO3166> = [
     numeric: "368",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-IQ" },
-      { dialect: "Kurdish", native: "Kurdî", iso639_1: "ku", bcp47: "ku-IQ" },
-    ],
+    dialects: ["ar-IQ", "ku-IQ"],
   },
   {
     name: "Ireland",
@@ -1866,15 +977,7 @@ export const countries: Array<ISO3166> = [
     numeric: "372",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "Irish", native: "Gaeilge", iso639_1: "ga", bcp47: "ga-IE" },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-IE",
-      },
-    ],
+    dialects: ["ga-IE", "en-IE"],
   },
   {
     name: "Isle of Man",
@@ -1883,15 +986,7 @@ export const countries: Array<ISO3166> = [
     numeric: "833",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-IM",
-      },
-      { dialect: "Manx", native: "Gaelg", iso639_1: "gv", bcp47: "gv-IM" },
-    ],
+    dialects: ["en-IM", "gv-IM"],
   },
   {
     name: "Israel",
@@ -1900,10 +995,7 @@ export const countries: Array<ISO3166> = [
     numeric: "376",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Hebrew", native: "עברית", iso639_1: "he", bcp47: "he-IL" },
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-IL" },
-    ],
+    dialects: ["he-IL", "ar-IL"],
   },
   {
     name: "Italy",
@@ -1912,14 +1004,7 @@ export const countries: Array<ISO3166> = [
     numeric: "380",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Italian",
-        native: "Italiano",
-        iso639_1: "it",
-        bcp47: "it-IT",
-      },
-    ],
+    dialects: ["it-IT"],
   },
   {
     name: "Jamaica",
@@ -1928,14 +1013,7 @@ export const countries: Array<ISO3166> = [
     numeric: "388",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-JM",
-      },
-    ],
+    dialects: ["en-JM"],
   },
   {
     name: "Japan",
@@ -1944,14 +1022,7 @@ export const countries: Array<ISO3166> = [
     numeric: "392",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Japanese",
-        native: "日本語",
-        iso639_1: "ja",
-        bcp47: "ja-JP",
-      },
-    ],
+    dialects: ["ja-JP"],
   },
   {
     name: "Jersey",
@@ -1960,20 +1031,7 @@ export const countries: Array<ISO3166> = [
     numeric: "832",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-JE",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-JE",
-      },
-    ],
+    dialects: ["en-JE", "fr-JE"],
   },
   {
     name: "Jordan",
@@ -1982,9 +1040,7 @@ export const countries: Array<ISO3166> = [
     numeric: "400",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-JO" },
-    ],
+    dialects: ["ar-JO"],
   },
   {
     name: "Kazakhstan",
@@ -1993,20 +1049,7 @@ export const countries: Array<ISO3166> = [
     numeric: "398",
     continents: ["Asia", "Europe"],
     regions: ["EMEA", "APAC"],
-    dialects: [
-      {
-        dialect: "Kazakh",
-        native: "қазақ тілі",
-        iso639_1: "kk",
-        bcp47: "kk-KZ",
-      },
-      {
-        dialect: "Russian",
-        native: "русский язык",
-        iso639_1: "ru",
-        bcp47: "ru-KZ",
-      },
-    ],
+    dialects: ["kk-KZ", "ru-KZ"],
   },
   {
     name: "Kenya",
@@ -2015,20 +1058,7 @@ export const countries: Array<ISO3166> = [
     numeric: "404",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Swahili",
-        native: "Kiswahili",
-        iso639_1: "sw",
-        bcp47: "sw-KE",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-KE",
-      },
-    ],
+    dialects: ["sw-KE", "en-KE"],
   },
   {
     name: "Kiribati",
@@ -2038,18 +1068,8 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-KI",
-      },
-      {
-        dialect: "Gilbertese",
-        native: "te taetae ni Kiribati",
-        iso639_3: "gil",
-        bcp47: "gil-KI",
-      }, // ISO 639-3, no 639-1
+      "en-KI",
+      "gil-KI", // ISO 639-3, no 639-1
     ],
   },
   {
@@ -2059,9 +1079,7 @@ export const countries: Array<ISO3166> = [
     numeric: "408",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      { dialect: "Korean", native: "한국어", iso639_1: "ko", bcp47: "ko-KP" },
-    ],
+    dialects: ["ko-KP"],
   },
   {
     name: "Republic of Korea",
@@ -2070,9 +1088,7 @@ export const countries: Array<ISO3166> = [
     numeric: "410",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      { dialect: "Korean", native: "한국어", iso639_1: "ko", bcp47: "ko-KR" },
-    ],
+    dialects: ["ko-KR"],
   },
   {
     name: "Kuwait",
@@ -2081,9 +1097,7 @@ export const countries: Array<ISO3166> = [
     numeric: "414",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-KW" },
-    ],
+    dialects: ["ar-KW"],
   },
   {
     name: "Kyrgyzstan",
@@ -2092,20 +1106,7 @@ export const countries: Array<ISO3166> = [
     numeric: "417",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Kyrgyz",
-        native: "Кыргызча",
-        iso639_1: "ky",
-        bcp47: "ky-KG",
-      },
-      {
-        dialect: "Russian",
-        native: "русский язык",
-        iso639_1: "ru",
-        bcp47: "ru-KG",
-      },
-    ],
+    dialects: ["ky-KG", "ru-KG"],
   },
   {
     name: "Lao People's Democratic Republic",
@@ -2114,9 +1115,7 @@ export const countries: Array<ISO3166> = [
     numeric: "418",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      { dialect: "Lao", native: "ພາສາລາວ", iso639_1: "lo", bcp47: "lo-LA" },
-    ],
+    dialects: ["lo-LA"],
   },
   {
     name: "Latvia",
@@ -2125,14 +1124,7 @@ export const countries: Array<ISO3166> = [
     numeric: "428",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Latvian",
-        native: "latviešu valoda",
-        iso639_1: "lv",
-        bcp47: "lv-LV",
-      },
-    ],
+    dialects: ["lv-LV"],
   },
   {
     name: "Lebanon",
@@ -2141,15 +1133,7 @@ export const countries: Array<ISO3166> = [
     numeric: "422",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-LB" },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-LB",
-      },
-    ],
+    dialects: ["ar-LB", "fr-LB"],
   },
   {
     name: "Lesotho",
@@ -2158,20 +1142,7 @@ export const countries: Array<ISO3166> = [
     numeric: "426",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Southern Sotho",
-        native: "Sesotho",
-        iso639_1: "st",
-        bcp47: "st-LS",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-LS",
-      },
-    ],
+    dialects: ["st-LS", "en-LS"],
   },
   {
     name: "Liberia",
@@ -2180,14 +1151,7 @@ export const countries: Array<ISO3166> = [
     numeric: "430",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-LR",
-      },
-    ],
+    dialects: ["en-LR"],
   },
   {
     name: "Libya",
@@ -2196,9 +1160,7 @@ export const countries: Array<ISO3166> = [
     numeric: "434",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-LY" },
-    ],
+    dialects: ["ar-LY"],
   },
   {
     name: "Liechtenstein",
@@ -2207,9 +1169,7 @@ export const countries: Array<ISO3166> = [
     numeric: "438",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "German", native: "Deutsch", iso639_1: "de", bcp47: "de-LI" },
-    ],
+    dialects: ["de-LI"],
   },
   {
     name: "Lithuania",
@@ -2218,14 +1178,7 @@ export const countries: Array<ISO3166> = [
     numeric: "440",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Lithuanian",
-        native: "lietuvių kalba",
-        iso639_1: "lt",
-        bcp47: "lt-LT",
-      },
-    ],
+    dialects: ["lt-LT"],
   },
   {
     name: "Luxembourg",
@@ -2234,21 +1187,7 @@ export const countries: Array<ISO3166> = [
     numeric: "442",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Luxembourgish",
-        native: "Lëtzebuergesch",
-        iso639_1: "lb",
-        bcp47: "lb-LU",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-LU",
-      },
-      { dialect: "German", native: "Deutsch", iso639_1: "de", bcp47: "de-LU" },
-    ],
+    dialects: ["lb-LU", "fr-LU", "de-LU"],
   },
   {
     name: "Macao",
@@ -2257,20 +1196,7 @@ export const countries: Array<ISO3166> = [
     numeric: "446",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Chinese",
-        native: "中文",
-        iso639_1: "zh",
-        bcp47: "zh-Hant-MO",
-      }, // Traditional Chinese for Macao
-      {
-        dialect: "Portuguese",
-        native: "Português",
-        iso639_1: "pt",
-        bcp47: "pt-MO",
-      },
-    ],
+    dialects: ["zh-Hant-MO", "pt-MO"],
   },
   {
     name: "Madagascar",
@@ -2279,20 +1205,7 @@ export const countries: Array<ISO3166> = [
     numeric: "450",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Malagasy",
-        native: "Malagasy fiteny",
-        iso639_1: "mg",
-        bcp47: "mg-MG",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-MG",
-      },
-    ],
+    dialects: ["mg-MG", "fr-MG"],
   },
   {
     name: "Malawi",
@@ -2301,20 +1214,7 @@ export const countries: Array<ISO3166> = [
     numeric: "454",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-MW",
-      },
-      {
-        dialect: "Chichewa",
-        native: "Chicheŵa",
-        iso639_1: "ny",
-        bcp47: "ny-MW",
-      },
-    ],
+    dialects: ["en-MW", "ny-MW"],
   },
   {
     name: "Malaysia",
@@ -2323,27 +1223,7 @@ export const countries: Array<ISO3166> = [
     numeric: "458",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Malay",
-        native: "Bahasa Melayu",
-        iso639_1: "ms",
-        bcp47: "ms-MY",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-MY",
-      },
-      {
-        dialect: "Chinese",
-        native: "中文",
-        iso639_1: "zh",
-        bcp47: "zh-Hans-MY",
-      }, // Simplified Chinese
-      { dialect: "Tamil", native: "தமிழ்", iso639_1: "ta", bcp47: "ta-MY" },
-    ],
+    dialects: ["ms-MY", "en-MY", "zh-Hans-MY", "ta-MY"],
   },
   {
     name: "Maldives",
@@ -2352,14 +1232,7 @@ export const countries: Array<ISO3166> = [
     numeric: "462",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Divehi",
-        native: "ދިވެހިބަސް",
-        iso639_1: "dv",
-        bcp47: "dv-MV",
-      },
-    ],
+    dialects: ["dv-MV"],
   },
   {
     name: "Mali",
@@ -2368,14 +1241,7 @@ export const countries: Array<ISO3166> = [
     numeric: "466",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-ML",
-      },
-    ],
+    dialects: ["fr-ML"],
   },
   {
     name: "Malta",
@@ -2384,15 +1250,7 @@ export const countries: Array<ISO3166> = [
     numeric: "470",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "Maltese", native: "Malti", iso639_1: "mt", bcp47: "mt-MT" },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-MT",
-      },
-    ],
+    dialects: ["mt-MT", "en-MT"],
   },
   {
     name: "Marshall Islands",
@@ -2401,20 +1259,7 @@ export const countries: Array<ISO3166> = [
     numeric: "584",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Marshallese",
-        native: "Kajin M̧ajeļ",
-        iso639_1: "mh",
-        bcp47: "mh-MH",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-MH",
-      },
-    ],
+    dialects: ["mh-MH", "en-MH"],
   },
   {
     name: "Martinique",
@@ -2423,14 +1268,7 @@ export const countries: Array<ISO3166> = [
     numeric: "474",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-MQ",
-      },
-    ],
+    dialects: ["fr-MQ"],
   },
   {
     name: "Mauritania",
@@ -2439,9 +1277,7 @@ export const countries: Array<ISO3166> = [
     numeric: "478",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-MR" },
-    ],
+    dialects: ["ar-MR"],
   },
   {
     name: "Mauritius",
@@ -2451,18 +1287,8 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-MU",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-MU",
-      },
+      "en-MU",
+      "fr-MU",
       // Mauritian Creole (mfe) - no 639-1
     ],
   },
@@ -2473,14 +1299,7 @@ export const countries: Array<ISO3166> = [
     numeric: "175",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-YT",
-      },
-    ],
+    dialects: ["fr-YT"],
   },
   {
     name: "Mexico",
@@ -2489,14 +1308,7 @@ export const countries: Array<ISO3166> = [
     numeric: "484",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-MX",
-      },
-    ],
+    dialects: ["es-MX"],
   },
   {
     name: "Micronesia (Federated States of)",
@@ -2505,14 +1317,7 @@ export const countries: Array<ISO3166> = [
     numeric: "583",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-FM",
-      },
-    ],
+    dialects: ["en-FM"],
   },
   {
     name: "Republic of Moldova",
@@ -2521,20 +1326,7 @@ export const countries: Array<ISO3166> = [
     numeric: "498",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Romanian",
-        native: "română",
-        iso639_1: "ro",
-        bcp47: "ro-MD",
-      },
-      {
-        dialect: "Russian",
-        native: "русский язык",
-        iso639_1: "ru",
-        bcp47: "ru-MD",
-      }, // De facto in Transnistria
-    ],
+    dialects: ["ro-MD", "ru-MD"],
   },
   {
     name: "Monaco",
@@ -2543,14 +1335,7 @@ export const countries: Array<ISO3166> = [
     numeric: "492",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-MC",
-      },
-    ],
+    dialects: ["fr-MC"],
   },
   {
     name: "Mongolia",
@@ -2559,14 +1344,7 @@ export const countries: Array<ISO3166> = [
     numeric: "496",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Mongolian",
-        native: "Монгол хэл",
-        iso639_1: "mn",
-        bcp47: "mn-MN",
-      },
-    ],
+    dialects: ["mn-MN"],
   },
   {
     name: "Montenegro",
@@ -2575,14 +1353,7 @@ export const countries: Array<ISO3166> = [
     numeric: "499",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Serbian",
-        native: "српски језик",
-        iso639_1: "sr",
-        bcp47: "sr-ME",
-      }, // Montenegrin is a variant of Serbian
-    ],
+    dialects: ["sr-ME"],
   },
   {
     name: "Montserrat",
@@ -2591,14 +1362,7 @@ export const countries: Array<ISO3166> = [
     numeric: "500",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-MS",
-      },
-    ],
+    dialects: ["en-MS"],
   },
   {
     name: "Morocco",
@@ -2607,15 +1371,7 @@ export const countries: Array<ISO3166> = [
     numeric: "504",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-MA" },
-      {
-        dialect: "Berber",
-        native: "Tamaziɣt",
-        iso639_3: "ber",
-        bcp47: "ber-MA",
-      }, // Placeholder, no direct ISO 639-1
-    ],
+    dialects: ["ar-MA", "ber-MA"],
   },
   {
     name: "Mozambique",
@@ -2624,14 +1380,7 @@ export const countries: Array<ISO3166> = [
     numeric: "508",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Portuguese",
-        native: "Português",
-        iso639_1: "pt",
-        bcp47: "pt-MZ",
-      },
-    ],
+    dialects: ["pt-MZ"],
   },
   {
     name: "Myanmar",
@@ -2640,14 +1389,7 @@ export const countries: Array<ISO3166> = [
     numeric: "104",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Burmese",
-        native: "မြန်မာဘာသာ",
-        iso639_1: "my",
-        bcp47: "my-MM",
-      },
-    ],
+    dialects: ["my-MM"],
   },
   {
     name: "Namibia",
@@ -2656,14 +1398,7 @@ export const countries: Array<ISO3166> = [
     numeric: "516",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-NA",
-      },
-    ],
+    dialects: ["en-NA"],
   },
   {
     name: "Nauru",
@@ -2672,20 +1407,7 @@ export const countries: Array<ISO3166> = [
     numeric: "520",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Nauruan",
-        native: "Dorerin Naoero",
-        iso639_1: "na",
-        bcp47: "na-NR",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-NR",
-      },
-    ],
+    dialects: ["na-NR", "en-NR"],
   },
   {
     name: "Nepal",
@@ -2694,9 +1416,7 @@ export const countries: Array<ISO3166> = [
     numeric: "524",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      { dialect: "Nepali", native: "नेपाली", iso639_1: "ne", bcp47: "ne-NP" },
-    ],
+    dialects: ["ne-NP"],
   },
   {
     name: "Netherlands",
@@ -2705,14 +1425,7 @@ export const countries: Array<ISO3166> = [
     numeric: "528",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Dutch",
-        native: "Nederlands",
-        iso639_1: "nl",
-        bcp47: "nl-NL",
-      },
-    ],
+    dialects: ["nl-NL"],
   },
   {
     name: "New Caledonia",
@@ -2721,14 +1434,7 @@ export const countries: Array<ISO3166> = [
     numeric: "540",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-NC",
-      },
-    ],
+    dialects: ["fr-NC"],
   },
   {
     name: "New Zealand",
@@ -2737,26 +1443,7 @@ export const countries: Array<ISO3166> = [
     numeric: "554",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-NZ",
-      },
-      {
-        dialect: "Maori",
-        native: "te reo Māori",
-        iso639_1: "mi",
-        bcp47: "mi-NZ",
-      },
-      {
-        dialect: "New Zealand Sign Language",
-        native: "New Zealand Sign Language",
-        iso639_3: "nzs",
-        bcp47: "nzs-NZ",
-      }, // ISO 639-3
-    ],
+    dialects: ["en-NZ", "mi-NZ", "nzs-NZ"],
   },
   {
     name: "Nicaragua",
@@ -2765,14 +1452,7 @@ export const countries: Array<ISO3166> = [
     numeric: "558",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-NI",
-      },
-    ],
+    dialects: ["es-NI"],
   },
   {
     name: "Niger",
@@ -2781,14 +1461,7 @@ export const countries: Array<ISO3166> = [
     numeric: "562",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-NE",
-      },
-    ],
+    dialects: ["fr-NE"],
   },
   {
     name: "Nigeria",
@@ -2798,12 +1471,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-NG",
-      },
+      "en-NG",
       // Major regional languages like Hausa, Yoruba, Igbo also spoken.
     ],
   },
@@ -2814,20 +1482,7 @@ export const countries: Array<ISO3166> = [
     numeric: "570",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Niuean",
-        native: "ko e Vagahau Niue",
-        iso639_3: "niu",
-        bcp47: "niu-NU",
-      }, // ISO 639-3
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-NU",
-      },
-    ],
+    dialects: ["niu-NU", "en-NU"],
   },
   {
     name: "Norfolk Island",
@@ -2837,12 +1492,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-NF",
-      },
+      "en-NF",
       // Norfuk (nfk) - no 639-1
     ],
   },
@@ -2853,14 +1503,7 @@ export const countries: Array<ISO3166> = [
     numeric: "807",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Macedonian",
-        native: "македонски јазик",
-        iso639_1: "mk",
-        bcp47: "mk-MK",
-      },
-    ],
+    dialects: ["mk-MK"],
   },
   {
     name: "Northern Mariana Islands",
@@ -2869,20 +1512,7 @@ export const countries: Array<ISO3166> = [
     numeric: "580",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-MP",
-      },
-      {
-        dialect: "Chamorro",
-        native: "Finuʼ Chamoru",
-        iso639_1: "ch",
-        bcp47: "ch-MP",
-      },
-    ],
+    dialects: ["en-MP", "ch-MP"],
   },
   {
     name: "Norway",
@@ -2892,18 +1522,8 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: [
-      {
-        dialect: "Norwegian Bokmal",
-        native: "norsk bokmål",
-        iso639_1: "nb",
-        bcp47: "nb-NO",
-      },
-      {
-        dialect: "Norwegian Nynorsk",
-        native: "nynorsk",
-        iso639_1: "nn",
-        bcp47: "nn-NO",
-      },
+      "nb-NO",
+      "nn-NO",
       // Sami languages also recognized.
     ],
   },
@@ -2914,9 +1534,7 @@ export const countries: Array<ISO3166> = [
     numeric: "512",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-OM" },
-    ],
+    dialects: ["ar-OM"],
   },
   {
     name: "Pakistan",
@@ -2925,15 +1543,7 @@ export const countries: Array<ISO3166> = [
     numeric: "586",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      { dialect: "Urdu", native: "اُردُو", iso639_1: "ur", bcp47: "ur-PK" },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-PK",
-      },
-    ],
+    dialects: ["ur-PK", "en-PK"],
   },
   {
     name: "Palau",
@@ -2942,20 +1552,7 @@ export const countries: Array<ISO3166> = [
     numeric: "585",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Palauan",
-        native: "Tebil era Belau",
-        iso639_3: "pau",
-        bcp47: "pau-PW",
-      }, // ISO 639-3
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-PW",
-      },
-    ],
+    dialects: ["pau-PW", "en-PW"],
   },
   {
     name: "Palestine, State of",
@@ -2964,9 +1561,7 @@ export const countries: Array<ISO3166> = [
     numeric: "275",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-PS" },
-    ],
+    dialects: ["ar-PS"],
   },
   {
     name: "Panama",
@@ -2975,14 +1570,7 @@ export const countries: Array<ISO3166> = [
     numeric: "591",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-PA",
-      },
-    ],
+    dialects: ["es-PA"],
   },
   {
     name: "Papua New Guinea",
@@ -2992,24 +1580,9 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: [
-      {
-        dialect: "Tok Pisin",
-        native: "Tok Pisin",
-        iso639_3: "tpi",
-        bcp47: "tpi-PG",
-      }, // ISO 639-3
-      {
-        dialect: "Hiri Motu",
-        native: "Hiri Motu",
-        iso639_1: "ho",
-        bcp47: "ho-PG",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-PG",
-      },
+      "tpi-PG",
+      "ho-PG",
+      "en-PG",
       // Over 800 indigenous languages
     ],
   },
@@ -3020,20 +1593,7 @@ export const countries: Array<ISO3166> = [
     numeric: "600",
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-PY",
-      },
-      {
-        dialect: "Guarani",
-        native: "Avañe'ẽ",
-        iso639_1: "gn",
-        bcp47: "gn-PY",
-      },
-    ],
+    dialects: ["es-PY", "gn-PY"],
   },
   {
     name: "Peru",
@@ -3042,20 +1602,7 @@ export const countries: Array<ISO3166> = [
     numeric: "604",
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-PE",
-      },
-      {
-        dialect: "Quechua",
-        native: "Runa simi",
-        iso639_1: "qu",
-        bcp47: "qu-PE",
-      },
-    ],
+    dialects: ["es-PE", "qu-PE"],
   },
   {
     name: "Philippines",
@@ -3064,20 +1611,7 @@ export const countries: Array<ISO3166> = [
     numeric: "608",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Filipino",
-        native: "Filipino",
-        iso639_3: "fil",
-        bcp47: "fil-PH",
-      }, // ISO 639-3, but common for Tagalog
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-PH",
-      },
-    ],
+    dialects: ["fil-PH", "en-PH"],
   },
   {
     name: "Pitcairn",
@@ -3087,12 +1621,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-PN",
-      },
+      "en-PN",
       // Pitkern (pih) - no 639-1
     ],
   },
@@ -3103,9 +1632,7 @@ export const countries: Array<ISO3166> = [
     numeric: "616",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "Polish", native: "polski", iso639_1: "pl", bcp47: "pl-PL" },
-    ],
+    dialects: ["pl-PL"],
   },
   {
     name: "Portugal",
@@ -3114,14 +1641,7 @@ export const countries: Array<ISO3166> = [
     numeric: "620",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Portuguese",
-        native: "Português",
-        iso639_1: "pt",
-        bcp47: "pt-PT",
-      },
-    ],
+    dialects: ["pt-PT"],
   },
   {
     name: "Puerto Rico",
@@ -3130,20 +1650,7 @@ export const countries: Array<ISO3166> = [
     numeric: "630",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-PR",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-PR",
-      },
-    ],
+    dialects: ["es-PR", "en-PR"],
   },
   {
     name: "Qatar",
@@ -3152,9 +1659,7 @@ export const countries: Array<ISO3166> = [
     numeric: "634",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-QA" },
-    ],
+    dialects: ["ar-QA"],
   },
   {
     name: "Réunion",
@@ -3163,14 +1668,7 @@ export const countries: Array<ISO3166> = [
     numeric: "638",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-RE",
-      },
-    ],
+    dialects: ["fr-RE"],
   },
   {
     name: "Romania",
@@ -3179,14 +1677,7 @@ export const countries: Array<ISO3166> = [
     numeric: "642",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Romanian",
-        native: "română",
-        iso639_1: "ro",
-        bcp47: "ro-RO",
-      },
-    ],
+    dialects: ["ro-RO"],
   },
   {
     name: "Russian Federation",
@@ -3195,14 +1686,7 @@ export const countries: Array<ISO3166> = [
     numeric: "643",
     continents: ["Europe", "Asia"],
     regions: ["EMEA", "APAC"],
-    dialects: [
-      {
-        dialect: "Russian",
-        native: "русский язык",
-        iso639_1: "ru",
-        bcp47: "ru-RU",
-      },
-    ],
+    dialects: ["ru-RU"],
   },
   {
     name: "Rwanda",
@@ -3211,26 +1695,7 @@ export const countries: Array<ISO3166> = [
     numeric: "646",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Kinyarwanda",
-        native: "Kinyarwanda",
-        iso639_1: "rw",
-        bcp47: "rw-RW",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-RW",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-RW",
-      },
-    ],
+    dialects: ["rw-RW", "en-RW"],
   },
   {
     name: "Saint Barthélemy",
@@ -3239,14 +1704,7 @@ export const countries: Array<ISO3166> = [
     numeric: "652",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-BL",
-      },
-    ],
+    dialects: ["fr-BL"],
   },
   {
     name: "Saint Helena, Ascension and Tristan da Cunha",
@@ -3255,14 +1713,7 @@ export const countries: Array<ISO3166> = [
     numeric: "654",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-SH",
-      },
-    ],
+    dialects: ["en-SH"],
   },
   {
     name: "Saint Kitts and Nevis",
@@ -3271,14 +1722,7 @@ export const countries: Array<ISO3166> = [
     numeric: "659",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-KN",
-      },
-    ],
+    dialects: ["en-KN"],
   },
   {
     name: "Saint Lucia",
@@ -3287,14 +1731,7 @@ export const countries: Array<ISO3166> = [
     numeric: "662",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-LC",
-      },
-    ],
+    dialects: ["en-LC"],
   },
   {
     name: "Saint Martin (French part)",
@@ -3303,14 +1740,7 @@ export const countries: Array<ISO3166> = [
     numeric: "663",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-MF",
-      },
-    ],
+    dialects: ["fr-MF"],
   },
   {
     name: "Saint Pierre and Miquelon",
@@ -3319,14 +1749,7 @@ export const countries: Array<ISO3166> = [
     numeric: "666",
     continents: ["North America"],
     regions: ["AMER", "NA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-PM",
-      },
-    ],
+    dialects: ["fr-PM"],
   },
   {
     name: "Saint Vincent and the Grenadines",
@@ -3335,14 +1758,7 @@ export const countries: Array<ISO3166> = [
     numeric: "670",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-VC",
-      },
-    ],
+    dialects: ["en-VC"],
   },
   {
     name: "Samoa",
@@ -3351,20 +1767,7 @@ export const countries: Array<ISO3166> = [
     numeric: "882",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Samoan",
-        native: "Gagana Sāmoa",
-        iso639_1: "sm",
-        bcp47: "sm-WS",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-WS",
-      },
-    ],
+    dialects: ["sm-WS", "en-WS"],
   },
   {
     name: "San Marino",
@@ -3373,14 +1776,7 @@ export const countries: Array<ISO3166> = [
     numeric: "674",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Italian",
-        native: "Italiano",
-        iso639_1: "it",
-        bcp47: "it-SM",
-      },
-    ],
+    dialects: ["it-SM"],
   },
   {
     name: "Sao Tome and Principe",
@@ -3389,14 +1785,7 @@ export const countries: Array<ISO3166> = [
     numeric: "678",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Portuguese",
-        native: "Português",
-        iso639_1: "pt",
-        bcp47: "pt-ST",
-      },
-    ],
+    dialects: ["pt-ST"],
   },
   {
     name: "Saudi Arabia",
@@ -3405,9 +1794,7 @@ export const countries: Array<ISO3166> = [
     numeric: "682",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-SA" },
-    ],
+    dialects: ["ar-SA"],
   },
   {
     name: "Senegal",
@@ -3416,14 +1803,7 @@ export const countries: Array<ISO3166> = [
     numeric: "686",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-SN",
-      },
-    ],
+    dialects: ["fr-SN"],
   },
   {
     name: "Serbia",
@@ -3432,14 +1812,7 @@ export const countries: Array<ISO3166> = [
     numeric: "688",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Serbian",
-        native: "српски језик",
-        iso639_1: "sr",
-        bcp47: "sr-RS",
-      },
-    ],
+    dialects: ["sr-RS"],
   },
   {
     name: "Seychelles",
@@ -3448,26 +1821,7 @@ export const countries: Array<ISO3166> = [
     numeric: "690",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Seychellois Creole",
-        native: "Seselwa",
-        iso639_3: "crs",
-        bcp47: "crs-SC",
-      }, // ISO 639-3
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-SC",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-SC",
-      },
-    ],
+    dialects: ["crs-SC", "en-SC", "fr-SC"],
   },
   {
     name: "Sierra Leone",
@@ -3477,12 +1831,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-SL",
-      },
+      "en-SL",
       // Krio (kri) - no 639-1
     ],
   },
@@ -3493,27 +1842,7 @@ export const countries: Array<ISO3166> = [
     numeric: "702",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-SG",
-      },
-      {
-        dialect: "Malay",
-        native: "Bahasa Melayu",
-        iso639_1: "ms",
-        bcp47: "ms-SG",
-      },
-      {
-        dialect: "Chinese",
-        native: "中文",
-        iso639_1: "zh",
-        bcp47: "zh-Hans-SG",
-      }, // Simplified Chinese
-      { dialect: "Tamil", native: "தமிழ்", iso639_1: "ta", bcp47: "ta-SG" },
-    ],
+    dialects: ["en-SG", "ms-SG", "zh-Hans-SG", "ta-SG"],
   },
   {
     name: "Sint Maarten (Dutch part)",
@@ -3522,20 +1851,7 @@ export const countries: Array<ISO3166> = [
     numeric: "534",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "Dutch",
-        native: "Nederlands",
-        iso639_1: "nl",
-        bcp47: "nl-SX",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-SX",
-      },
-    ],
+    dialects: ["nl-SX", "en-SX"],
   },
   {
     name: "Slovakia",
@@ -3544,14 +1860,7 @@ export const countries: Array<ISO3166> = [
     numeric: "703",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Slovak",
-        native: "slovenčina",
-        iso639_1: "sk",
-        bcp47: "sk-SK",
-      },
-    ],
+    dialects: ["sk-SK"],
   },
   {
     name: "Slovenia",
@@ -3560,14 +1869,7 @@ export const countries: Array<ISO3166> = [
     numeric: "705",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Slovenian",
-        native: "slovenski jezik",
-        iso639_1: "sl",
-        bcp47: "sl-SI",
-      },
-    ],
+    dialects: ["sl-SI"],
   },
   {
     name: "Solomon Islands",
@@ -3577,12 +1879,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-SB",
-      },
+      "en-SB",
       // Pijin (pis) - no 639-1
     ],
   },
@@ -3593,15 +1890,7 @@ export const countries: Array<ISO3166> = [
     numeric: "706",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Somali",
-        native: "Af Soomaali",
-        iso639_1: "so",
-        bcp47: "so-SO",
-      },
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-SO" },
-    ],
+    dialects: ["so-SO", "ar-SO"],
   },
   {
     name: "South Africa",
@@ -3611,57 +1900,17 @@ export const countries: Array<ISO3166> = [
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
     dialects: [
-      {
-        dialect: "Afrikaans",
-        native: "Afrikaans",
-        iso639_1: "af",
-        bcp47: "af-ZA",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-ZA",
-      },
-      { dialect: "Zulu", native: "isiZulu", iso639_1: "zu", bcp47: "zu-ZA" },
-      { dialect: "Xhosa", native: "isiXhosa", iso639_1: "xh", bcp47: "xh-ZA" },
-      {
-        dialect: "Southern Sotho",
-        native: "Sesotho",
-        iso639_1: "st",
-        bcp47: "st-ZA",
-      },
-      {
-        dialect: "Tswana",
-        native: "Setswana",
-        iso639_1: "tn",
-        bcp47: "tn-ZA",
-      },
-      { dialect: "Swati", native: "SiSwati", iso639_1: "ss", bcp47: "ss-ZA" },
-      {
-        dialect: "Venda",
-        native: "Tshivenḓa",
-        iso639_1: "ve",
-        bcp47: "ve-ZA",
-      },
-      {
-        dialect: "Tsonga",
-        native: "Xitsonga",
-        iso639_1: "ts",
-        bcp47: "ts-ZA",
-      },
-      {
-        dialect: "Northern Sotho",
-        native: "Sesotho sa Leboa",
-        iso639_3: "nso",
-        bcp47: "nso-ZA",
-      }, // ISO 639-3
-      {
-        dialect: "Ndebele",
-        native: "isiNdebele",
-        iso639_1: "nr",
-        bcp47: "nr-ZA",
-      }, // ISO 639-3
+      "af-ZA",
+      "en-ZA",
+      "zu-ZA",
+      "xh-ZA",
+      "st-ZA",
+      "tn-ZA",
+      "ss-ZA",
+      "ve-ZA",
+      "ts-ZA",
+      "nso-ZA",
+      "nr-ZA",
     ],
   },
   {
@@ -3671,14 +1920,7 @@ export const countries: Array<ISO3166> = [
     numeric: "239",
     continents: ["Antarctica"],
     regions: [],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-GS",
-      },
-    ],
+    dialects: ["en-GS"],
   },
   {
     name: "South Sudan",
@@ -3687,14 +1929,7 @@ export const countries: Array<ISO3166> = [
     numeric: "728",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-SS",
-      },
-    ],
+    dialects: ["en-SS"],
   },
   {
     name: "Spain",
@@ -3704,20 +1939,10 @@ export const countries: Array<ISO3166> = [
     continents: ["Europe"],
     regions: ["EMEA"],
     dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-ES",
-      },
-      { dialect: "Catalan", native: "Català", iso639_1: "ca", bcp47: "ca-ES" },
-      {
-        dialect: "Galician",
-        native: "Galego",
-        iso639_1: "gl",
-        bcp47: "gl-ES",
-      },
-      { dialect: "Basque", native: "Euskara", iso639_1: "eu", bcp47: "eu-ES" },
+      "es-ES",
+      "ca-ES",
+      "gl-ES",
+      "eu-ES",
       // Aranese, Valencian, etc. are also recognized in specific regions
     ],
   },
@@ -3728,10 +1953,7 @@ export const countries: Array<ISO3166> = [
     numeric: "144",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      { dialect: "Sinhala", native: "සිංහල", iso639_1: "si", bcp47: "si-LK" },
-      { dialect: "Tamil", native: "தமிழ்", iso639_1: "ta", bcp47: "ta-LK" },
-    ],
+    dialects: ["si-LK", "ta-LK"],
   },
   {
     name: "Sudan",
@@ -3740,15 +1962,7 @@ export const countries: Array<ISO3166> = [
     numeric: "729",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-SD" },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-SD",
-      },
-    ],
+    dialects: ["ar-SD", "en-SD"],
   },
   {
     name: "Suriname",
@@ -3757,14 +1971,7 @@ export const countries: Array<ISO3166> = [
     numeric: "740",
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "Dutch",
-        native: "Nederlands",
-        iso639_1: "nl",
-        bcp47: "nl-SR",
-      },
-    ],
+    dialects: ["nl-SR"],
   },
   {
     name: "Svalbard and Jan Mayen",
@@ -3773,14 +1980,7 @@ export const countries: Array<ISO3166> = [
     numeric: "744",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Norwegian",
-        native: "Norsk",
-        iso639_1: "no",
-        bcp47: "no-SJ",
-      },
-    ],
+    dialects: ["no-SJ"],
   },
   {
     name: "Sweden",
@@ -3789,14 +1989,7 @@ export const countries: Array<ISO3166> = [
     numeric: "752",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Swedish",
-        native: "Svenska",
-        iso639_1: "sv",
-        bcp47: "sv-SE",
-      },
-    ],
+    dialects: ["sv-SE"],
   },
   {
     name: "Switzerland",
@@ -3805,27 +1998,7 @@ export const countries: Array<ISO3166> = [
     numeric: "756",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "German", native: "Deutsch", iso639_1: "de", bcp47: "de-CH" },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-CH",
-      },
-      {
-        dialect: "Italian",
-        native: "Italiano",
-        iso639_1: "it",
-        bcp47: "it-CH",
-      },
-      {
-        dialect: "Romansh",
-        native: "rumantsch",
-        iso639_1: "rm",
-        bcp47: "rm-CH",
-      },
-    ],
+    dialects: ["de-CH", "fr-CH", "it-CH", "rm-CH"],
   },
   {
     name: "Syrian Arab Republic",
@@ -3834,9 +2007,7 @@ export const countries: Array<ISO3166> = [
     numeric: "760",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-SY" },
-    ],
+    dialects: ["ar-SY"],
   },
   {
     name: "Taiwan (Province of China)",
@@ -3845,14 +2016,7 @@ export const countries: Array<ISO3166> = [
     numeric: "158",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Chinese",
-        native: "中文",
-        iso639_1: "zh",
-        bcp47: "zh-Hant-TW",
-      }, // Traditional Chinese for Taiwan
-    ],
+    dialects: ["zh-Hant-TW"],
   },
   {
     name: "Tajikistan",
@@ -3861,15 +2025,7 @@ export const countries: Array<ISO3166> = [
     numeric: "762",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      { dialect: "Tajik", native: "тоҷикӣ", iso639_1: "tg", bcp47: "tg-TJ" },
-      {
-        dialect: "Russian",
-        native: "русский язык",
-        iso639_1: "ru",
-        bcp47: "ru-TJ",
-      },
-    ],
+    dialects: ["tg-TJ", "ru-TJ"],
   },
   {
     name: "Tanzania, United Republic of",
@@ -3878,20 +2034,7 @@ export const countries: Array<ISO3166> = [
     numeric: "834",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "Swahili",
-        native: "Kiswahili",
-        iso639_1: "sw",
-        bcp47: "sw-TZ",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-TZ",
-      },
-    ],
+    dialects: ["sw-TZ", "en-TZ"],
   },
   {
     name: "Thailand",
@@ -3900,9 +2043,7 @@ export const countries: Array<ISO3166> = [
     numeric: "764",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      { dialect: "Thai", native: "ไทย", iso639_1: "th", bcp47: "th-TH" },
-    ],
+    dialects: ["th-TH"],
   },
   {
     name: "Timor-Leste",
@@ -3911,15 +2052,7 @@ export const countries: Array<ISO3166> = [
     numeric: "626",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      { dialect: "Tetum", native: "Tetun", iso639_3: "tet", bcp47: "tet-TL" }, // ISO 639-3
-      {
-        dialect: "Portuguese",
-        native: "Português",
-        iso639_1: "pt",
-        bcp47: "pt-TL",
-      },
-    ],
+    dialects: ["tet-TL", "pt-TL"],
   },
   {
     name: "Togo",
@@ -3928,14 +2061,7 @@ export const countries: Array<ISO3166> = [
     numeric: "768",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-TG",
-      },
-    ],
+    dialects: ["fr-TG"],
   },
   {
     name: "Tokelau",
@@ -3944,20 +2070,7 @@ export const countries: Array<ISO3166> = [
     numeric: "772",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Tokelauan",
-        native: "Gagana Tokelau",
-        iso639_3: "tkl",
-        bcp47: "tkl-TK",
-      }, // ISO 639-3
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-TK",
-      },
-    ],
+    dialects: ["tkl-TK", "en-TK"],
   },
   {
     name: "Tonga",
@@ -3966,20 +2079,7 @@ export const countries: Array<ISO3166> = [
     numeric: "776",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Tongan",
-        native: "lea faka-Tonga",
-        iso639_1: "to",
-        bcp47: "to-TO",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-TO",
-      },
-    ],
+    dialects: ["to-TO", "en-TO"],
   },
   {
     name: "Trinidad and Tobago",
@@ -3988,14 +2088,7 @@ export const countries: Array<ISO3166> = [
     numeric: "780",
     continents: ["South America", "Africa"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-TT",
-      },
-    ],
+    dialects: ["en-TT"],
   },
   {
     name: "Tunisia",
@@ -4004,9 +2097,7 @@ export const countries: Array<ISO3166> = [
     numeric: "788",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-TN" },
-    ],
+    dialects: ["ar-TN"],
   },
   {
     name: "Turkey",
@@ -4015,9 +2106,7 @@ export const countries: Array<ISO3166> = [
     numeric: "792",
     continents: ["Asia", "Europe"],
     regions: ["EMEA"],
-    dialects: [
-      { dialect: "Turkish", native: "Türkçe", iso639_1: "tr", bcp47: "tr-TR" },
-    ],
+    dialects: ["tr-TR"],
   },
   {
     name: "Turkmenistan",
@@ -4026,20 +2115,7 @@ export const countries: Array<ISO3166> = [
     numeric: "795",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Turkmen",
-        native: "Türkmen dili",
-        iso639_1: "tk",
-        bcp47: "tk-TM",
-      },
-      {
-        dialect: "Russian",
-        native: "русский язык",
-        iso639_1: "ru",
-        bcp47: "ru-TM",
-      },
-    ],
+    dialects: ["tk-TM", "ru-TM"],
   },
   {
     name: "Turks and Caicos Islands",
@@ -4048,14 +2124,7 @@ export const countries: Array<ISO3166> = [
     numeric: "796",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-TC",
-      },
-    ],
+    dialects: ["en-TC"],
   },
   {
     name: "Tuvalu",
@@ -4064,20 +2133,7 @@ export const countries: Array<ISO3166> = [
     numeric: "798",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Tuvaluan",
-        native: "Te Gagana Tuvalu",
-        iso639_3: "tvl",
-        bcp47: "tvl-TV",
-      }, // ISO 639-3
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-TV",
-      },
-    ],
+    dialects: ["tvl-TV", "en-TV"],
   },
   {
     name: "Uganda",
@@ -4086,26 +2142,7 @@ export const countries: Array<ISO3166> = [
     numeric: "800",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-UG",
-      },
-      {
-        dialect: "Luganda",
-        native: "Luganda",
-        iso639_1: "lg",
-        bcp47: "lg-UG",
-      },
-      {
-        dialect: "Swahili",
-        native: "Kiswahili",
-        iso639_1: "sw",
-        bcp47: "sw-UG",
-      },
-    ],
+    dialects: ["en-UG", "lg-UG", "sw-UG"],
   },
   {
     name: "Ukraine",
@@ -4114,14 +2151,7 @@ export const countries: Array<ISO3166> = [
     numeric: "804",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Ukrainian",
-        native: "українська",
-        iso639_1: "uk",
-        bcp47: "uk-UA",
-      },
-    ],
+    dialects: ["uk-UA"],
   },
   {
     name: "United Arab Emirates",
@@ -4130,9 +2160,7 @@ export const countries: Array<ISO3166> = [
     numeric: "784",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-AE" },
-    ],
+    dialects: ["ar-AE"],
   },
   {
     name: "United Kingdom of Great Britain and Northern Ireland",
@@ -4141,29 +2169,7 @@ export const countries: Array<ISO3166> = [
     numeric: "826",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-GB",
-      },
-      {
-        dialect: "Scottish Gaelic",
-        native: "Gàidhlig",
-        iso639_1: "gd",
-        bcp47: "gd-GB",
-      },
-      { dialect: "Welsh", native: "Cymraeg", iso639_1: "cy", bcp47: "cy-GB" },
-      { dialect: "Irish", native: "Gaeilge", iso639_1: "ga", bcp47: "ga-GB" }, // Recognized in Northern Ireland
-      {
-        dialect: "Cornish",
-        native: "Kernowek",
-        iso639_1: "kw",
-        bcp47: "kw-GB",
-      },
-      { dialect: "Scots", native: "Scots", iso639_3: "sco", bcp47: "sco-GB" }, // ISO 639-3
-    ],
+    dialects: ["en-GB", "gd-GB", "cy-GB", "ga-GB", "kw-GB", "sco-GB"],
   },
   {
     name: "United States Minor Outlying Islands",
@@ -4172,14 +2178,7 @@ export const countries: Array<ISO3166> = [
     numeric: "581",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-UM",
-      },
-    ],
+    dialects: ["en-UM"],
   },
   {
     name: "United States of America",
@@ -4188,14 +2187,7 @@ export const countries: Array<ISO3166> = [
     numeric: "840",
     continents: ["North America"],
     regions: ["AMER", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-US",
-      },
-    ],
+    dialects: ["en-US"],
   },
   {
     name: "Uruguay",
@@ -4204,14 +2196,7 @@ export const countries: Array<ISO3166> = [
     numeric: "858",
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-UY",
-      },
-    ],
+    dialects: ["es-UY"],
   },
   {
     name: "Uzbekistan",
@@ -4220,20 +2205,7 @@ export const countries: Array<ISO3166> = [
     numeric: "860",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Uzbek",
-        native: "Oʻzbek tili",
-        iso639_1: "uz",
-        bcp47: "uz-UZ",
-      },
-      {
-        dialect: "Russian",
-        native: "русский язык",
-        iso639_1: "ru",
-        bcp47: "ru-UZ",
-      },
-    ],
+    dialects: ["uz-UZ", "ru-UZ"],
   },
   {
     name: "Vanuatu",
@@ -4242,26 +2214,7 @@ export const countries: Array<ISO3166> = [
     numeric: "548",
     continents: ["Oceania"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Bislama",
-        native: "Bislama",
-        iso639_1: "bi",
-        bcp47: "bi-VU",
-      },
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-VU",
-      },
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-VU",
-      },
-    ],
+    dialects: ["bi-VU", "en-VU", "fr-VU"],
   },
   {
     name: "Bolivarian Republic of Venezuela",
@@ -4270,14 +2223,7 @@ export const countries: Array<ISO3166> = [
     numeric: "862",
     continents: ["South America"],
     regions: ["AMER", "LATAM", "SA"],
-    dialects: [
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-VE",
-      },
-    ],
+    dialects: ["es-VE"],
   },
   {
     name: "Vietnam",
@@ -4286,14 +2232,7 @@ export const countries: Array<ISO3166> = [
     numeric: "704",
     continents: ["Asia"],
     regions: ["APAC"],
-    dialects: [
-      {
-        dialect: "Vietnamese",
-        native: "Tiếng Việt",
-        iso639_1: "vi",
-        bcp47: "vi-VN",
-      },
-    ],
+    dialects: ["vi-VN"],
   },
   {
     name: "Virgin Islands (British)",
@@ -4302,14 +2241,7 @@ export const countries: Array<ISO3166> = [
     numeric: "092",
     continents: ["North America"],
     regions: ["AMER", "LATAM", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-VG",
-      },
-    ],
+    dialects: ["en-VG"],
   },
   {
     name: "Virgin Islands (U.S.)",
@@ -4318,14 +2250,7 @@ export const countries: Array<ISO3166> = [
     numeric: "850",
     continents: ["North America"],
     regions: ["AMER", "NA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-VI",
-      },
-    ],
+    dialects: ["en-VI"],
   },
   {
     name: "Wallis and Futuna",
@@ -4335,12 +2260,7 @@ export const countries: Array<ISO3166> = [
     continents: ["Oceania"],
     regions: ["APAC"],
     dialects: [
-      {
-        dialect: "French",
-        native: "Français",
-        iso639_1: "fr",
-        bcp47: "fr-WF",
-      },
+      "fr-WF",
       // Wallisian (wls) and Futunan (fud) - no 639-1
     ],
   },
@@ -4351,15 +2271,7 @@ export const countries: Array<ISO3166> = [
     numeric: "732",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-EH" },
-      {
-        dialect: "Spanish",
-        native: "Español",
-        iso639_1: "es",
-        bcp47: "es-EH",
-      }, // Historically recognized
-    ],
+    dialects: ["ar-EH", "es-EH"],
   },
   {
     name: "Yemen",
@@ -4368,9 +2280,7 @@ export const countries: Array<ISO3166> = [
     numeric: "887",
     continents: ["Asia"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      { dialect: "Arabic", native: "العربية", iso639_1: "ar", bcp47: "ar-YE" },
-    ],
+    dialects: ["ar-YE"],
   },
   {
     name: "Zambia",
@@ -4379,14 +2289,7 @@ export const countries: Array<ISO3166> = [
     numeric: "894",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-ZM",
-      },
-    ],
+    dialects: ["en-ZM"],
   },
   {
     name: "Zimbabwe",
@@ -4395,22 +2298,7 @@ export const countries: Array<ISO3166> = [
     numeric: "716",
     continents: ["Africa"],
     regions: ["EMEA", "MEA"],
-    dialects: [
-      {
-        dialect: "English",
-        native: "English",
-        iso639_1: "en",
-        bcp47: "en-ZW",
-      },
-      { dialect: "Shona", native: "chiShona", iso639_1: "sn", bcp47: "sn-ZW" },
-      {
-        dialect: "Northern Ndebele",
-        native: "isiNdebele",
-        iso639_1: "nd",
-        bcp47: "nd-ZW",
-      },
-      // Other languages also official, but including the most common for brevity
-    ],
+    dialects: ["en-ZW", "sn-ZW", "nd-ZW"],
   },
   {
     name: "Åland Islands",
@@ -4419,14 +2307,7 @@ export const countries: Array<ISO3166> = [
     numeric: "248",
     continents: ["Europe"],
     regions: ["EMEA"],
-    dialects: [
-      {
-        dialect: "Swedish",
-        native: "Svenska",
-        iso639_1: "sv",
-        bcp47: "sv-AX",
-      },
-    ],
+    dialects: ["sv-AX"],
   },
 ];
 

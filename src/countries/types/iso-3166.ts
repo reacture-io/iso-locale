@@ -6,6 +6,7 @@ import { isValidCountry, type Country } from "./country";
 import { isValidNumeric, type Numeric } from "./numeric";
 import { isValidRegion, type Region } from "./region";
 import { isValidDialect, type Dialect } from "../../languages";
+import { isValidBCP47, type BCP47 } from "../../languages/types/bcp-47";
 
 export const iso3166 = z.object({
   name: z.custom<Country>((value) => isValidCountry(value)),
@@ -14,7 +15,7 @@ export const iso3166 = z.object({
   numeric: z.custom<Numeric>((value) => isValidNumeric(value)),
   regions: z.array(z.custom<Region>((value) => isValidRegion(value))),
   continents: z.array(z.custom<Continent>((value) => isValidContinent(value))),
-  dialects: z.array(z.custom<Dialect>((value) => isValidDialect(value))),
+  dialects: z.array(z.custom<BCP47>((value) => isValidBCP47(value))),
 });
 
 /**
