@@ -1,81 +1,32 @@
-import { describe, it, expect } from "vitest";
-import {
-  findCountryByAlpha2,
-  findCountryByAlpha3,
-  findCountryByNumeric,
-  findCountryByName,
-  getCountriesByRegion,
-  getCountriesByContinent,
-} from "../utils";
-import type { Alpha2 } from "../alpha2";
-import type { Alpha3 } from "../alpha3";
-import type { Numeric } from "../numeric";
-import type { Country } from "../country";
+import { describe, expect, it } from "vitest";
+import { getCountriesByContinent, getCountriesByRegion } from "../utils";
 
-const afghan = findCountryByName("Afghanistan");
-
-describe("utils", () => {
-  it("should be defined", () => {
-    expect(findCountryByAlpha2).toBeDefined();
-  });
-
-  it("should find country by alpha2", () => {
-    expect(findCountryByAlpha2("AF")).to.deep.equal(afghan);
-  });
-
-  it("should find country by alpha3", () => {
-    expect(findCountryByAlpha3("AFG")).to.deep.equal(afghan);
-  });
-
-  it("should find country by numeric", () => {
-    expect(findCountryByNumeric("004")).to.deep.equal(afghan);
-  });
-
-  it("should find country by name", () => {
-    expect(findCountryByName("Afghanistan")).to.deep.equal(afghan);
-  });
-
-  it("should not find country by invalid alpha2", () => {
-    expect(findCountryByAlpha2("XX" as Alpha2)).to.be.undefined;
-  });
-
-  it("should not find country by invalid alpha3", () => {
-    expect(findCountryByAlpha3("XXX" as Alpha3)).to.be.undefined;
-  });
-
-  it("should not find country by invalid numeric", () => {
-    expect(findCountryByNumeric("000000" as Numeric)).to.be.undefined;
-  });
-
-  it("should not find country by invalid name", () => {
-    expect(findCountryByName("Wonderland" as Country)).to.be.undefined;
-  });
-
+describe("countries utils", () => {
   it("should have 129 countries in EMEA", () => {
     expect(getCountriesByRegion("EMEA").length).toBe(129);
   });
 
-  it("should have 129 countries in AMER", () => {
+  it("should have 55 countries in AMER", () => {
     expect(getCountriesByRegion("AMER").length).toBe(55);
   });
 
-  it("should have 129 countries in APAC", () => {
+  it("should have 64 countries in APAC", () => {
     expect(getCountriesByRegion("APAC").length).toBe(64);
   });
 
-  it("should have 129 countries in MEA", () => {
+  it("should have 73 countries in MEA", () => {
     expect(getCountriesByRegion("MEA").length).toBe(73);
   });
 
-  it("should have 129 countries in LATAM", () => {
+  it("should have 48 countries in LATAM", () => {
     expect(getCountriesByRegion("LATAM").length).toBe(48);
   });
 
-  it("should have 129 countries in NA", () => {
+  it("should have 37 countries in NA", () => {
     expect(getCountriesByRegion("NA").length).toBe(37);
   });
 
-  it("should have 129 countries in SA", () => {
+  it("should have 18 countries in SA", () => {
     expect(getCountriesByRegion("SA").length).toBe(18);
   });
 

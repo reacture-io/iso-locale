@@ -1,29 +1,40 @@
-import type { Alpha2 } from "./alpha2";
-import type { Alpha3 } from "./alpha3";
-import type { Continent } from "./continent";
-import { countries } from "./data";
-import type { Country } from "./country";
-import type { ISO3166 } from "./iso-3166";
-import type { Numeric } from "./numeric";
-import type { Region } from "./region";
+import { assert } from "../utils/assert";
+import { countries } from "./countries";
+import type {
+  Alpha2,
+  Alpha3,
+  Continent,
+  CountryName,
+  Country,
+  Numeric,
+  Region,
+} from "./types";
 
-export function findCountryByAlpha2(alpha2: Alpha2) {
-  return countries.find((country) => country.alpha2 === alpha2);
+export function getCountryByAlpha2(alpha2: Alpha2): Country {
+  const country = countries.find((country) => country.alpha2 === alpha2);
+  assert(country, `Country with alpha2 ${alpha2} not found`);
+  return country;
 }
 
-export function findCountryByAlpha3(alpha3: Alpha3) {
-  return countries.find((country) => country.alpha3 === alpha3);
+export function getCountryByAlpha3(alpha3: Alpha3): Country {
+  const country = countries.find((country) => country.alpha3 === alpha3);
+  assert(country, `Country with alpha3 ${alpha3} not found`);
+  return country;
 }
 
-export function findCountryByNumeric(numeric: Numeric) {
-  return countries.find((country) => country.numeric === numeric);
+export function getCountryByNumeric(numeric: Numeric): Country {
+  const country = countries.find((country) => country.numeric === numeric);
+  assert(country, `Country with numeric ${numeric} not found`);
+  return country;
 }
 
-export function findCountryByName(name: Country) {
-  return countries.find((country) => country.name === name);
+export function getCountryByName(name: CountryName): Country {
+  const country = countries.find((country) => country.name === name);
+  assert(country, `Country with name ${name} not found`);
+  return country;
 }
 
-export function isPartOfRegion(country: ISO3166, region: Region) {
+export function isPartOfRegion(country: Country, region: Region) {
   return country.regions.includes(region);
 }
 

@@ -1,11 +1,7 @@
-import { describe, it, expect } from "vitest";
-import { continents, countries, regions } from "../data";
+import { describe, expect, it } from "vitest";
+import { continents, countries, regions } from "../countries";
 
-describe("countries", () => {
-  it("should be defined", () => {
-    expect(countries).toBeDefined();
-  });
-
+describe("verification supported data (countries, continents, regions)", () => {
   it("should support 249 countries", () => {
     expect(countries.length).toBe(249);
   });
@@ -16,5 +12,11 @@ describe("countries", () => {
 
   it("should support 7 regions", () => {
     expect(regions.length).toBe(7);
+  });
+
+  it("should have atleast 1 dialect for each country", () => {
+    countries.forEach((country) => {
+      expect(country.dialects.length).toBeGreaterThan(0);
+    });
   });
 });

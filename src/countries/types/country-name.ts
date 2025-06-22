@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const country = z.enum([
+export const countryName = z.enum([
   "Afghanistan",
   "Albania",
   "Algeria",
@@ -251,7 +251,7 @@ export const country = z.enum([
   "Zimbabwe",
   "Åland Islands",
 ]);
-export type Country = z.infer<typeof country>;
+export type CountryName = z.infer<typeof countryName>;
 
-export const isValidCountry = (_country: unknown) =>
-  country.safeParse(_country).success;
+export const isValidCountryName = (_country: unknown) =>
+  countryName.safeParse(_country).success;

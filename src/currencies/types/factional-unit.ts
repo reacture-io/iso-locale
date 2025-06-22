@@ -1,0 +1,52 @@
+import { z } from "zod";
+
+export const factionalUnit = z.enum([
+  "Kopeck",
+  "Pul",
+  "Cent",
+  "Qintar",
+  "Centime",
+  "Cêntimo",
+  "Centavo",
+  "Luma",
+  "Fils",
+  "Poisha",
+  "Fening",
+  "Thebe",
+  "Sen",
+  "Stotinka",
+  "Butut",
+  "Tetri",
+  "Pesewa",
+  "Øre",
+  "Eyrir",
+  "Rial",
+  "Agora",
+  "Jeon",
+  "Tyiyn",
+  "Att",
+  "Sente",
+  "Dirham",
+  "Rappen",
+  "Iraimbilanja",
+  "Tambala",
+  "Laari",
+  "Khoums",
+  "Möngö",
+  "Paisa",
+  "Satang",
+  "Tenge",
+  "Piaster",
+  "Sentimo",
+  "Grosz",
+  "Ban",
+  "Ngwee",
+  "Diram",
+  "Céntimo",
+  "Heller",
+]);
+
+export type FactionalUnit = z.infer<typeof factionalUnit>;
+
+export const isValidFactionalUnit = (_factionalUnit: unknown) =>
+  factionalUnit.safeParse(_factionalUnit).success;
