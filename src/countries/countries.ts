@@ -1,5 +1,4 @@
-import type { ISO3166 } from "./iso-3166";
-import type { Continent, Region } from "./types";
+import type { Continent, ISO3166, Region } from "./types";
 
 export const countries: Array<ISO3166> = [
   {
@@ -336,8 +335,8 @@ export const countries: Array<ISO3166> = [
     regions: ["EMEA"],
     dialects: [
       {
-        dialect: "Dutch",
-        native: "Nederlands",
+        dialect: "Flemish",
+        native: "Vlaams",
         iso639_1: "nl",
         bcp47: "nl-BE",
       },

@@ -2,8 +2,9 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
   entry: {
-    "countries/index": "src/countries/index.ts",
     index: "src/index.ts",
+    "countries/index": "src/countries/index.ts",
+    "languages/index": "src/languages/index.ts",
   },
   outDir: "dist",
   format: ["esm", "cjs"],

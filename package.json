@@ -2,19 +2,46 @@
   "name": "@reacture-io/iso-locale",
   "version": "0.1.3",
   "description": "Provide ISO standards for handling countries & languages. Fully written in typescript.",
+  "author": "Indy Van Canegem",
+  "license": "MIT",
+  "keywords": [
+    "iso",
+    "languages",
+    "countries",
+    "iso-639",
+    "iso-3166",
+    "i18n",
+    "L10n",
+    "localization",
+    "internationalization",
+    "locale",
+    "localization",
+    "internationalization",
+    "locale"
+  ],
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    },
     "./countries": {
       "types": "./dist/countries/index.d.ts",
       "import": "./dist/countries/index.mjs",
       "require": "./dist/countries/index.cjs"
+    },
+    "./languages": {
+      "types": "./dist/languages/index.d.ts",
+      "import": "./dist/languages/index.mjs",
+      "require": "./dist/languages/index.cjs"
     }
   },
   "files": [
@@ -29,22 +56,6 @@
     "lint": "biome lint .",
     "test": "vitest",
     "release": "npx @changesets/cli publish"
-  },
-  "keywords": [
-    "iso",
-    "languages",
-    "countries"
-  ],
-  "author": "Indy Van Canegem",
-  "license": "MIT",
-  "engines": {
-    "node": ">=22.0.0",
-    "pnpm": ">=10.0.0",
-    "npm": "please-use-pnpm",
-    "yarn": "please-use-pnpm"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.4",

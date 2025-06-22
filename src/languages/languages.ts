@@ -1,4 +1,4 @@
-import type { ISO639 } from "./iso-639";
+import type { ISO639 } from "./types";
 
 export const languages: Array<ISO639> = [
   { language: "Afar", native: "Qafar af", iso639_1: "aa", iso639_3: "aar" },
