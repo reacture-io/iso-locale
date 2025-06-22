@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.2.0
+
+### Minor Changes
+
+- fa04993: add languages and currencies
+
 ## 0.1.3
 
 ### Patch Changes
