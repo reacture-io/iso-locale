@@ -7,6 +7,3 @@ export const bcp47 = z
   );
 
 export type BCP47 = z.infer<typeof bcp47>;
-
-export const isValidBCP47 = (object: unknown) =>
-  bcp47.safeParse(object).success;

@@ -23,3 +23,7 @@ export function getDialectByCode(bcp47: BCP47): Dialect {
   assert(dialect, `Dialect with bcp47 ${bcp47} not found`);
   return dialect;
 }
+
+export function isValidBCP47(bcp47: string): boolean {
+  return dialects.some((dialect) => dialect.bcp47 === bcp47);
+}

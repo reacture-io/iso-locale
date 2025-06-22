@@ -4,6 +4,7 @@ import {
   getDialectByCode,
   getDialectsByCode,
   getLanguageByCode,
+  isValidBCP47,
 } from "../utils";
 
 describe("languages utils", () => {
@@ -36,5 +37,9 @@ describe("languages utils", () => {
       "fr-BE",
       "de-BE",
     ]);
+  });
+
+  it("should verify if bcp47 is valid", () => {
+    expect(isValidBCP47("en-US")).toBe(true);
   });
 });

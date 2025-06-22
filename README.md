@@ -198,6 +198,9 @@ console.log(isValidISO639_1('xx')); // false
 console.log(isValidISO639_3('eng')); // true
 console.log(isValidISO639_3('xxx')); // false
 
+console.log(isValidBCP47("en-US")); // true
+console.log(isValidBCP47("en-XX")); // false
+
 // Validate language objects
 console.log(isValidLanguage({ language: "English", native: "English", iso639_1: "en", iso639_3: "eng" })); // true
 ```
