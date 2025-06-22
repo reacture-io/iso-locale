@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.2.3
+
+### Patch Changes
+
+- 18f8974: export currencies
+
 ## 0.2.2
 
 ### Patch Changes
