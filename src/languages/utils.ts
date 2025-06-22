@@ -10,10 +10,8 @@ export function getLanguageByCode(
   );
 }
 
-export function getDialectByCode(
-  code: ISO639_1 | ISO639_3
-): Dialect | undefined {
-  return dialects.find(
+export function getDialectsByCode(code: ISO639_1 | ISO639_3): Array<Dialect> {
+  return dialects.filter(
     (dialect) => dialect.iso639_1 === code || dialect.iso639_3 === code
   );
 }
