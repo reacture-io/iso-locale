@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.2.4
+
+### Patch Changes
+
+- d29e0ad: remove constraint on engines
+
 ## 0.2.3
 
 ### Patch Changes
