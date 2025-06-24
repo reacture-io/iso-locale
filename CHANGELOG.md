@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.2.5
+
+### Patch Changes
+
+- 7df0a55: fix root export & resolve typings for package usage
+
 ## 0.2.4
 
 ### Patch Changes
