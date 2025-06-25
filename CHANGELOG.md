@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.2.6
+
+### Patch Changes
+
+- fe521ee: fix export root in package.json
+
 ## 0.2.5
 
 ### Patch Changes
