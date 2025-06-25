@@ -1,6 +1,6 @@
 {
   "name": "@reacture-io/iso-locale",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Provide ISO standards for handling countries & languages. Fully written in typescript.",
   "author": "Indy Van Canegem",
   "license": "MIT",
