@@ -2529,7 +2529,7 @@ export const dialects: Array<Dialect> = [
     native: "English (United Arab Emirates)",
     iso639_1: "en",
     iso639_3: "eng",
-    bcp47: "en-GB",
+    bcp47: "en-AE",
   },
   {
     dialect: "Scottish Gaelic (United Kingdom)",
@@ -2570,7 +2570,7 @@ export const dialects: Array<Dialect> = [
     native: "English (United Kingdom)",
     iso639_1: "en",
     iso639_3: "eng",
-    bcp47: "en-UM",
+    bcp47: "en-GB",
   },
   {
     dialect: "English (United States)",
