@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.2.7
+
+### Patch Changes
+
+- dfde41a: fix bcp en-GB/en-AE
+
 ## 0.2.6
 
 ### Patch Changes
