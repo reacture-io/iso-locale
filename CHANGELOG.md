@@ -1,5 +1,12 @@
 # @reacture/iso-locale
 
+## 0.2.8
+
+### Patch Changes
+
+- 60bcdad: add prettier as devDev
+- eb334e5: use @reacture-io packages for DX
+
 ## 0.2.7
 
 ### Patch Changes
