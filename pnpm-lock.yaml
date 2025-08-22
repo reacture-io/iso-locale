@@ -20,13 +20,16 @@ importers:
         version: 0.0.1(turbo@2.5.6)(typescript@5.8.3)
       '@reacture-io/prettier-config':
         specifier: ^0.0.1
-        version: 0.0.1(prettier@2.8.8)
+        version: 0.0.1(prettier@3.6.2)
       '@reacture-io/tsconfig':
         specifier: ^0.0.1
         version: 0.0.1
       eslint:
         specifier: ^9.34.0
         version: 9.34.0
+      prettier:
+        specifier: ^3.6.2
+        version: 3.6.2
       tsup:
         specifier: ^8.5.0
         version: 8.5.0(postcss@8.5.6)(typescript@5.8.3)
@@ -1642,6 +1645,11 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
 
@@ -2495,9 +2503,9 @@ snapshots:
       - turbo
       - typescript
 
-  '@reacture-io/prettier-config@0.0.1(prettier@2.8.8)':
+  '@reacture-io/prettier-config@0.0.1(prettier@3.6.2)':
     dependencies:
-      prettier-plugin-tailwindcss: 0.6.14(prettier@2.8.8)
+      prettier-plugin-tailwindcss: 0.6.14(prettier@3.6.2)
     transitivePeerDependencies:
       - '@ianvs/prettier-plugin-sort-imports'
       - '@prettier/plugin-hermes'
@@ -3867,11 +3875,13 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-tailwindcss@0.6.14(prettier@2.8.8):
+  prettier-plugin-tailwindcss@0.6.14(prettier@3.6.2):
     dependencies:
-      prettier: 2.8.8
+      prettier: 3.6.2
 
   prettier@2.8.8: {}
+
+  prettier@3.6.2: {}
 
   prop-types@15.8.1:
     dependencies:
