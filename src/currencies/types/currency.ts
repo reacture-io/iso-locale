@@ -1,8 +1,9 @@
 import { z } from "zod";
-import { isValidISO4217, type ISO4217 } from "./iso-4217";
+
+import { type CurrencyName,isValidCurrencyName } from "./currency-name";
+import { type FactionalUnit,isValidFactionalUnit } from "./factional-unit";
+import { type ISO4217,isValidISO4217 } from "./iso-4217";
 import { isValidSymbol, type Symbol } from "./symbol";
-import { isValidFactionalUnit, type FactionalUnit } from "./factional-unit";
-import { isValidCurrencyName, type CurrencyName } from "./currency-name";
 
 export const currency = z.object({
   name: z.custom<CurrencyName>((value) => isValidCurrencyName(value)),

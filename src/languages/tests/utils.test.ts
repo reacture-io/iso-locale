@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { getCountryByAlpha2 } from "../../countries";
 import {
   getDialectByCode,
@@ -10,10 +11,10 @@ import {
 describe("languages utils", () => {
   it("should find language by iso-639-1 code", () => {
     const language = getLanguageByCode("en");
-    expect(language?.iso639_1).toBe("en");
-    expect(language?.language).toBe("English");
-    expect(language?.native).toBe("English");
-    expect(language?.iso639_3).toBe("eng");
+    expect(language.iso639_1).toBe("en");
+    expect(language.language).toBe("English");
+    expect(language.native).toBe("English");
+    expect(language.iso639_3).toBe("eng");
   });
 
   it("should find dialect by iso-639-1 code", () => {

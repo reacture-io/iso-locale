@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
+
+import { getCountryByAlpha2 } from "../../countries";
 import {
   getCurrenciesByName,
   getCurrenciesBySymbol,
   getCurrencyByISO4217,
 } from "../utils";
-import { iso4217, symbol, currencyName } from "../types";
-import { getCountryByAlpha2 } from "../../countries";
 
 describe("currencies utils", () => {
   it("should find currency by iso4217 code", () => {
@@ -23,9 +23,9 @@ describe("currencies utils", () => {
   it("should find currency by name", () => {
     const currencies = getCurrenciesByName("United States dollar");
     expect(currencies.length).toBe(1);
-    expect(currencies[0].iso4217).toBe("USD");
-    expect(currencies[0].name).toBe("United States dollar");
-    expect(currencies[0].symbol).toBe("$");
+    expect(currencies[0]?.iso4217).toBe("USD");
+    expect(currencies[0]?.name).toBe("United States dollar");
+    expect(currencies[0]?.symbol).toBe("$");
   });
 
   it("should give euro for belgium", () => {

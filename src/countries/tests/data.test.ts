@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { continents, countries, regions } from "../countries";
 
 describe("verification supported data (countries, continents, regions)", () => {

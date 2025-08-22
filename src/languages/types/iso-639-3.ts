@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const iso639_3 = z.string().regex(/^[a-z]{3}$/);
+export const iso639_3 = z.string().regex(/^[a-z]{3}$/u);
 
 export type ISO639_3 = z.infer<typeof iso639_3>;
 

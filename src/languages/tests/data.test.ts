@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { languages } from "../languages";
+
 import { dialects } from "../dialects";
+import { languages } from "../languages";
 import { languageName } from "../types";
 
 describe("verification supported data (languages & dialects)", () => {

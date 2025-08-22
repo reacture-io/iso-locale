@@ -59,14 +59,17 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "format": "biome format . --write",
-    "lint": "biome lint .",
+    "lint": "eslint .",
+    "format": "prettier --write .",
     "test": "vitest",
     "release": "npx @changesets/cli publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.4",
-    "biome": "^0.3.3",
+    "@reacture-io/eslint-config": "^0.0.1",
+    "@reacture-io/prettier-config": "^0.0.1",
+    "@reacture-io/tsconfig": "^0.0.1",
+    "eslint": "^9.34.0",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3",
     "vitest": "^3.2.4"

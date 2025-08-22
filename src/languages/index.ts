@@ -1,4 +1,4 @@
+export * from "./dialects";
+export * from "./languages";
 export * from "./types";
 export * from "./utils";
-export * from "./languages";
-export * from "./dialects";

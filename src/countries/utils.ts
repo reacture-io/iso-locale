@@ -1,35 +1,36 @@
 import { assert } from "../utils/assert";
+
 import { countries } from "./countries";
 import type {
   Alpha2,
   Alpha3,
   Continent,
-  CountryName,
   Country,
+  CountryName,
   Numeric,
   Region,
 } from "./types";
 
 export function getCountryByAlpha2(alpha2: Alpha2): Country {
-  const country = countries.find((country) => country.alpha2 === alpha2);
+  const country = countries.find((_country) => _country.alpha2 === alpha2);
   assert(country, `Country with alpha2 ${alpha2} not found`);
   return country;
 }
 
 export function getCountryByAlpha3(alpha3: Alpha3): Country {
-  const country = countries.find((country) => country.alpha3 === alpha3);
+  const country = countries.find((_country) => _country.alpha3 === alpha3);
   assert(country, `Country with alpha3 ${alpha3} not found`);
   return country;
 }
 
 export function getCountryByNumeric(numeric: Numeric): Country {
-  const country = countries.find((country) => country.numeric === numeric);
+  const country = countries.find((_country) => _country.numeric === numeric);
   assert(country, `Country with numeric ${numeric} not found`);
   return country;
 }
 
 export function getCountryByName(name: CountryName): Country {
-  const country = countries.find((country) => country.name === name);
+  const country = countries.find((_country) => _country.name === name);
   assert(country, `Country with name ${name} not found`);
   return country;
 }
@@ -39,7 +40,7 @@ export function isPartOfRegion(country: Country, region: Region) {
 }
 
 export function getCountriesByRegion(region: Region) {
-  return countries.filter((country) => country.regions.includes(region));
+  return countries.filter((_country) => _country.regions.includes(region));
 }
 
 export function getCountriesByContinent(continent: Continent) {
