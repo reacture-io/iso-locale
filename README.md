@@ -1,6 +1,6 @@
 # @reacture-io/iso-locale
 
-by (reacture)[https://www.reacture.io/]
+by [reacture](https://www.reacture.io/)
 
 A comprehensive TypeScript library providing ISO standards for handling countries, languages, dialects, and currencies. This package offers full type safety using Zod validation with support for ISO 3166 country codes, ISO 639 language codes, BCP-47 dialects, and ISO 4217 currency codes.
 
