@@ -36,14 +36,14 @@ import {
   countries,
   getCountryByAlpha2,
   getCountryByAlpha3,
-} from "@reacture-io/iso-locale/countries";
+} from '@reacture-io/iso-locale/countries';
 ```
 
 #### Finding Countries
 
 ```typescript
 // Find by Alpha-2 code (2-letter country code)
-const usa = getCountryByAlpha2("US");
+const usa = getCountryByAlpha2('US');
 console.log(usa);
 // {
 //   name: "United States of America",
@@ -57,7 +57,7 @@ console.log(usa);
 // }
 
 // Find by Alpha-3 code (3-letter country code)
-const canada = getCountryByAlpha3("CAN");
+const canada = getCountryByAlpha3('CAN');
 console.log(canada);
 // {
 //   name: "Canada",
@@ -71,7 +71,7 @@ console.log(canada);
 // }
 
 // Find by numeric code
-const germany = getCountryByNumeric("276");
+const germany = getCountryByNumeric('276');
 console.log(germany);
 // {
 //   name: "Germany",
@@ -85,7 +85,7 @@ console.log(germany);
 // }
 
 // Find by country name
-const france = getCountryByName("France");
+const france = getCountryByName('France');
 console.log(france);
 // {
 //   name: "France",
@@ -105,31 +105,31 @@ console.log(france);
 import {
   getCountriesByRegion,
   isPartOfRegion,
-} from "@reacture-io/iso-locale/countries";
+} from '@reacture-io/iso-locale/countries';
 
 // Get all countries in a specific region
-const emeaCountries = getCountriesByRegion("EMEA");
+const emeaCountries = getCountriesByRegion('EMEA');
 console.log(emeaCountries.length); // Number of EMEA countries
 
 // Check if a country belongs to a region
-const usa = getCountryByAlpha2("US");
+const usa = getCountryByAlpha2('US');
 if (usa) {
-  console.log(isPartOfRegion(usa, "AMER")); // true
-  console.log(isPartOfRegion(usa, "EMEA")); // false
+  console.log(isPartOfRegion(usa, 'AMER')); // true
+  console.log(isPartOfRegion(usa, 'EMEA')); // false
 }
 ```
 
 #### Working with Continents
 
 ```typescript
-import { getCountriesByContinent } from "@reacture-io/iso-locale/countries";
+import { getCountriesByContinent } from '@reacture-io/iso-locale/countries';
 
 // Get all countries in a specific continent
-const europeanCountries = getCountriesByContinent("Europe");
+const europeanCountries = getCountriesByContinent('Europe');
 console.log(europeanCountries.length); // Number of European countries
 
 // Some countries span multiple continents
-const russia = getCountryByAlpha2("RU");
+const russia = getCountryByAlpha2('RU');
 console.log(russia?.continents); // ["Asia", "Europe"]
 ```
 
@@ -142,27 +142,27 @@ import {
   isValidCountry,
   isValidRegion,
   isValidContinent,
-} from "@reacture-io/iso-locale/countries";
+} from '@reacture-io/iso-locale/countries';
 
 // Validate Alpha-2 codes
-console.log(isValidAlpha2("US")); // true
-console.log(isValidAlpha2("XX")); // false
+console.log(isValidAlpha2('US')); // true
+console.log(isValidAlpha2('XX')); // false
 
 // Validate Alpha-3 codes
-console.log(isValidAlpha3("USA")); // true
-console.log(isValidAlpha3("XXX")); // false
+console.log(isValidAlpha3('USA')); // true
+console.log(isValidAlpha3('XXX')); // false
 
 // Validate country names
-console.log(isValidCountry("United States of America")); // true
-console.log(isValidCountry("Wonderland")); // false
+console.log(isValidCountry('United States of America')); // true
+console.log(isValidCountry('Wonderland')); // false
 
 // Validate regions
-console.log(isValidRegion("EMEA")); // true
-console.log(isValidRegion("INVALID")); // false
+console.log(isValidRegion('EMEA')); // true
+console.log(isValidRegion('INVALID')); // false
 
 // Validate continents
-console.log(isValidContinent("Europe")); // true
-console.log(isValidContinent("Invalid")); // false
+console.log(isValidContinent('Europe')); // true
+console.log(isValidContinent('Invalid')); // false
 ```
 
 ### Languages
@@ -173,14 +173,14 @@ console.log(isValidContinent("Invalid")); // false
 import {
   languages,
   getLanguageByCode,
-} from "@reacture-io/iso-locale/languages";
+} from '@reacture-io/iso-locale/languages';
 ```
 
 #### Finding Languages
 
 ```typescript
 // Find by ISO 639-1 code (2-letter language code)
-const english = getLanguageByCode("en");
+const english = getLanguageByCode('en');
 console.log(english);
 // {
 //   language: "English",
@@ -190,7 +190,7 @@ console.log(english);
 // }
 
 // Find by ISO 639-3 code (3-letter language code)
-const french = getLanguageByCode("fra");
+const french = getLanguageByCode('fra');
 console.log(french);
 // {
 //   language: "French",
@@ -210,26 +210,26 @@ import {
   isValidISO639_1,
   isValidISO639_3,
   isValidLanguage,
-} from "@reacture-io/iso-locale/languages";
+} from '@reacture-io/iso-locale/languages';
 
 // Validate ISO 639-1 codes
-console.log(isValidISO639_1("en")); // true
-console.log(isValidISO639_1("xx")); // false
+console.log(isValidISO639_1('en')); // true
+console.log(isValidISO639_1('xx')); // false
 
 // Validate ISO 639-3 codes
-console.log(isValidISO639_3("eng")); // true
-console.log(isValidISO639_3("xxx")); // false
+console.log(isValidISO639_3('eng')); // true
+console.log(isValidISO639_3('xxx')); // false
 
-console.log(isValidBCP47("en-US")); // true
-console.log(isValidBCP47("en-XX")); // false
+console.log(isValidBCP47('en-US')); // true
+console.log(isValidBCP47('en-XX')); // false
 
 // Validate language objects
 console.log(
   isValidLanguage({
-    language: "English",
-    native: "English",
-    iso639_1: "en",
-    iso639_3: "eng",
+    language: 'English',
+    native: 'English',
+    iso639_1: 'en',
+    iso639_3: 'eng',
   })
 ); // true
 ```
@@ -243,14 +243,14 @@ import {
   dialects,
   getDialectByCode,
   getDialectsByCode,
-} from "@reacture-io/iso-locale/languages";
+} from '@reacture-io/iso-locale/languages';
 ```
 
 #### Finding Dialects
 
 ```typescript
 // Find by BCP-47 code (language-region code)
-const usEnglish = getDialectByCode("en-US");
+const usEnglish = getDialectByCode('en-US');
 console.log(usEnglish);
 // {
 //   dialect: "English (United States)",
@@ -261,7 +261,7 @@ console.log(usEnglish);
 // }
 
 // Find all dialects for a language
-const englishDialects = getDialectsByCode("en");
+const englishDialects = getDialectsByCode('en');
 console.log(englishDialects.length); // Number of English dialects
 
 // Access all dialects
@@ -274,20 +274,20 @@ console.log(dialects.length); // Number of supported dialects
 import {
   isValidBCP47,
   isValidDialect,
-} from "@reacture-io/iso-locale/languages";
+} from '@reacture-io/iso-locale/languages';
 
 // Validate BCP-47 codes
-console.log(isValidBCP47("en-US")); // true
-console.log(isValidBCP47("en-XX")); // false
+console.log(isValidBCP47('en-US')); // true
+console.log(isValidBCP47('en-XX')); // false
 
 // Validate dialect objects
 console.log(
   isValidDialect({
-    dialect: "English (United States)",
-    native: "English (United States)",
-    iso639_1: "en",
-    iso639_3: "eng",
-    bcp47: "en-US",
+    dialect: 'English (United States)',
+    native: 'English (United States)',
+    iso639_1: 'en',
+    iso639_3: 'eng',
+    bcp47: 'en-US',
   })
 ); // true
 ```
@@ -301,14 +301,14 @@ import {
   currencies,
   getCurrencyByISO4217,
   getCurrenciesBySymbol,
-} from "@reacture-io/iso-locale/currencies";
+} from '@reacture-io/iso-locale/currencies';
 ```
 
 #### Finding Currencies
 
 ```typescript
 // Find by ISO 4217 code (3-letter currency code)
-const usd = getCurrencyByISO4217("USD");
+const usd = getCurrencyByISO4217('USD');
 console.log(usd);
 // {
 //   name: "United States dollar",
@@ -318,11 +318,11 @@ console.log(usd);
 // }
 
 // Find currencies by symbol
-const dollarCurrencies = getCurrenciesBySymbol("$");
+const dollarCurrencies = getCurrenciesBySymbol('$');
 console.log(dollarCurrencies.length); // Number of currencies using $ symbol
 
 // Find currencies by name
-const euroCurrencies = getCurrenciesByName("Euro");
+const euroCurrencies = getCurrenciesByName('Euro');
 console.log(euroCurrencies);
 // [{
 //   name: "Euro",
@@ -342,23 +342,23 @@ import {
   isValidISO4217,
   isValidSymbol,
   isValidCurrency,
-} from "@reacture-io/iso-locale/currencies";
+} from '@reacture-io/iso-locale/currencies';
 
 // Validate ISO 4217 codes
-console.log(isValidISO4217("USD")); // true
-console.log(isValidISO4217("XXX")); // false
+console.log(isValidISO4217('USD')); // true
+console.log(isValidISO4217('XXX')); // false
 
 // Validate currency symbols
-console.log(isValidSymbol("$")); // true
-console.log(isValidSymbol("INVALID")); // false
+console.log(isValidSymbol('$')); // true
+console.log(isValidSymbol('INVALID')); // false
 
 // Validate currency objects
 console.log(
   isValidCurrency({
-    name: "United States dollar",
-    symbol: "$",
-    iso4217: "USD",
-    factionalUnit: "Cent",
+    name: 'United States dollar',
+    symbol: '$',
+    iso4217: 'USD',
+    factionalUnit: 'Cent',
   })
 ); // true
 ```

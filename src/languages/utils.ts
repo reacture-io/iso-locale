@@ -1,9 +1,9 @@
-import { assert } from "../utils/assert";
+import { assert } from '../utils/assert';
 
-import type { BCP47 } from "./types/bcp-47";
-import { dialects } from "./dialects";
-import { languages } from "./languages";
-import type { Dialect, ISO639_1, ISO639_3, Language } from "./types";
+import type { BCP47 } from './types/bcp-47';
+import { dialects } from './dialects';
+import { languages } from './languages';
+import type { Dialect, ISO639_1, ISO639_3, Language } from './types';
 
 export function getLanguageByCode(code: ISO639_1 | ISO639_3): Language {
   const language = languages.find(

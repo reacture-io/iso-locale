@@ -1,7 +1,7 @@
-import { assert } from "../utils/assert";
+import { assert } from '../utils/assert';
 
-import { currencies } from "./currencies";
-import type { Currency, CurrencyName, ISO4217, Symbol } from "./types";
+import { currencies } from './currencies';
+import type { Currency, CurrencyName, ISO4217, Symbol } from './types';
 
 export function getCurrencyByISO4217(iso4217: ISO4217): Currency {
   const currency = currencies.find(
