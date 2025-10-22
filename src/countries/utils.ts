@@ -1,6 +1,6 @@
-import { assert } from "../utils/assert";
+import { assert } from '../utils/assert';
 
-import { countries } from "./countries";
+import { countries } from './countries';
 import type {
   Alpha2,
   Alpha3,
@@ -9,7 +9,7 @@ import type {
   CountryName,
   Numeric,
   Region,
-} from "./types";
+} from './types';
 
 export function getCountryByAlpha2(alpha2: Alpha2): Country {
   const country = countries.find((_country) => _country.alpha2 === alpha2);

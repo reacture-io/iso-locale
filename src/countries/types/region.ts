@@ -1,13 +1,13 @@
-import { z } from "zod";
+import { z } from 'zod';
 
 export const region = z.enum([
-  "EMEA",
-  "APAC",
-  "AMER",
-  "LATAM",
-  "NA",
-  "SA",
-  "MEA",
+  'EMEA',
+  'APAC',
+  'AMER',
+  'LATAM',
+  'NA',
+  'SA',
+  'MEA',
 ]);
 
 export type Region = z.infer<typeof region>;

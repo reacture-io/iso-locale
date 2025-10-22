@@ -1,10 +1,10 @@
-import { z } from "zod";
+import { z } from 'zod';
 
-import { isValidBCP47 } from "../utils";
+import { isValidBCP47 } from '../utils';
 
-import { type BCP47 } from "./bcp-47";
-import { type ISO639_1,isValidISO639_1 } from "./iso-639-1";
-import { type ISO639_3,isValidISO639_3 } from "./iso-639-3";
+import { type BCP47 } from './bcp-47';
+import { type ISO639_1, isValidISO639_1 } from './iso-639-1';
+import { type ISO639_3, isValidISO639_3 } from './iso-639-3';
 
 export const dialect = z.object({
   dialect: z.string(),

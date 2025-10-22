@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from 'zod';
 
 export const iso639_3 = z.string().regex(/^[a-z]{3}$/u);
 

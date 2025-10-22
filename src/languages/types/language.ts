@@ -1,8 +1,8 @@
-import { z } from "zod";
+import { z } from 'zod';
 
-import { type ISO639_1,isValidISO639_1 } from "./iso-639-1";
-import { type ISO639_3,isValidISO639_3 } from "./iso-639-3";
-import { isValidLanguageName, type LanguageName } from "./language-name";
+import { type ISO639_1, isValidISO639_1 } from './iso-639-1';
+import { type ISO639_3, isValidISO639_3 } from './iso-639-3';
+import { isValidLanguageName, type LanguageName } from './language-name';
 
 export const language = z.object({
   language: z.custom<LanguageName>((value) => isValidLanguageName(value)),
