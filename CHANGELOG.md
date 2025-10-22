@@ -1,5 +1,11 @@
 # @reacture/iso-locale
 
+## 0.2.9
+
+### Patch Changes
+
+- 67c06e0: rename UK
+
 ## 0.2.8
 
 ### Patch Changes
